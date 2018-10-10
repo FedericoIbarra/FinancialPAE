@@ -1,0 +1,23 @@
+.root {
+    -fx-background-color: #383838;
+}
+
+.label {
+    -fx-text-fill: #D8D8D8;
+    -fx-font-family: ".SF NS Display";
+    -fx-font-size: 12pt;
+}
+
+.buttonIn {
+    -fx-background-color: #2449B5;
+    -fx-text-fill: #D8D8D8;
+}
+
+.buttonUp {
+    -fx-background-color: #AB4642;
+    -fx-text-fill: #D8D8D8;
+}
+
+.TextField {
+    -fx-background-color: #B8B8B8;
+}
