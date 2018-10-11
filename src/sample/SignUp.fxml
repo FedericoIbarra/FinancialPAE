@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.geometry.Insets?>
+
+<AnchorPane fx:controller="sample.SignUpController" xmlns:fx="http://javafx.com/fxml" fx:id="gp">
+    <children>
+        <Button AnchorPane.leftAnchor="7" AnchorPane.topAnchor="7" styleClass="buttonBack" onAction="#back"/>
+        <GridPane vgap="10" AnchorPane.topAnchor="80" AnchorPane.leftAnchor="315">
+            <children>
+
+                <Label text="Name:" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="label"/>
+                <TextField fx:id="tf_name" GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="TextField"/>
+                <Label text="User Name:" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="label"/>
+                <TextField fx:id="tf_user" GridPane.columnIndex="1" GridPane.rowIndex="4" styleClass="TextField"/>
+                <Label text="Email:" GridPane.columnIndex="1" GridPane.columnSpan="1" GridPane.rowIndex="5"/>
+                <TextField fx:id="tf_email" GridPane.columnIndex="1" GridPane.rowIndex="6" styleClass="TextField"/>
+                <Label text="Confirm Email:" GridPane.columnIndex="1" GridPane.columnSpan="1" GridPane.rowIndex="7"/>
+                <TextField fx:id="tf_email2" GridPane.columnIndex="1" GridPane.rowIndex="8" styleClass="TextField"/>
+                <Label text="Password:" GridPane.columnIndex="1" GridPane.rowIndex="9" styleClass="label"/>
+                <PasswordField fx:id="tf_pass" GridPane.columnIndex="1" GridPane.rowIndex="10" styleClass="TextField"/>
+                <Label text="Confirm Password:" GridPane.columnIndex="1" GridPane.rowIndex="11" styleClass="label"/>
+                <PasswordField fx:id="tf_pass2" GridPane.columnIndex="1" GridPane.rowIndex="12" styleClass="TextField"/>
+
+                <VBox GridPane.columnIndex="1" GridPane.rowIndex="13" alignment="CENTER">
+                    <children>
+                        <Button text="Send" styleClass="buttonIn"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="20.0" />
+                    </padding>
+                </VBox>
+
+
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

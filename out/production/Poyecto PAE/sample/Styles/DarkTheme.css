@@ -9,15 +9,20 @@
 }
 
 .buttonIn {
-    -fx-background-color: #2449B5;
+    -fx-background-color: #0F9C62;
     -fx-text-fill: #D8D8D8;
 }
 
 .buttonUp {
-    -fx-background-color: #AB4642;
-    -fx-text-fill: #D8D8D8;
+    -fx-background-color: #FF893C;
+    -fx-text-fill: #383838;
 }
 
 .TextField {
     -fx-background-color: #B8B8B8;
+}
+
+.buttonBack {
+    -fx-background-color: #383838;
+    -fx-graphic: url('/sample/Media/BackIcon.png');
 }
