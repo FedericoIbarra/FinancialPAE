@@ -3,7 +3,7 @@
 }
 
 .label {
-    -fx-text-fill: #D8D8D8;
+    -fx-text-fill: #BFC4A4;
     -fx-font-family: ".SF NS Display";
     -fx-font-size: 12pt;
 }
@@ -14,12 +14,12 @@
 }
 
 .buttonUp {
-    -fx-background-color: #FF893C;
+    -fx-background-color: #BFC4A4;
     -fx-text-fill: #383838;
 }
 
 .TextField {
-    -fx-background-color: #B8B8B8;
+    -fx-background-color: #DEDEDE;
 }
 
 .buttonBack {

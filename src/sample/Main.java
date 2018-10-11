@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.Locale;
+
 public class Main extends Application {
 
     public Parent root;
@@ -23,6 +25,8 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
+
+        I18N.getInstance().setLocale(Locale.getDefault());
         launch(args);
     }
 }

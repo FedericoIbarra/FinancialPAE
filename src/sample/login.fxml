@@ -15,9 +15,9 @@
 <AnchorPane fx:id="gp" fx:controller="sample.LoginController"
             xmlns:fx="http://javafx.com/fxml" >
 
-    <padding>
-        <Insets topRightBottomLeft="10"/>
-    </padding>
+
+
+    <Button fx:id="bt_leng" AnchorPane.leftAnchor="750" AnchorPane.topAnchor="7" styleClass="buttonUp"/>
 
     <StackPane AnchorPane.bottomAnchor="150" AnchorPane.topAnchor="120" AnchorPane.leftAnchor="300" AnchorPane.rightAnchor="150">
     <GridPane StackPane.alignment="CENTER" vgap="10" hgap="10">
@@ -35,20 +35,20 @@
             </padding>
         </VBox>
 
-        <Label text="User:" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="label"/>
+        <Label fx:id="lb_user" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="label"/>
         <TextField fx:id="tf_user" GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="TextField"/>
-        <Label text="Password:" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="label"/>
+        <Label fx:id="lb_pass" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="label"/>
         <PasswordField fx:id="tf_password" GridPane.columnIndex="1" GridPane.rowIndex="4" styleClass="TextField"/>
 
         <VBox GridPane.columnIndex="1" GridPane.rowIndex="5" alignment="CENTER">
             <children>
-                <Button text="Sign In" fx:id="bt_login"  styleClass="buttonIn"/>
-                <Label text="or" styleClass="label">
+                <Button fx:id="bt_login"  styleClass="buttonIn"/>
+                <Label fx:id="lb_or" styleClass="label">
                     <padding>
                         <Insets bottom="7.0" top="7.0" />
                     </padding>
                 </Label>
-                <Button text="Sign Up!" fx:id="bt_signup" styleClass="buttonUp" onAction="#signUp"/>
+                <Button fx:id="bt_signup" styleClass="buttonUp" onAction="#signUp"/>
             </children>
 
             <padding>
