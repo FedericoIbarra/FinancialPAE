@@ -8,9 +8,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
-
 import java.io.IOException;
 import java.util.ResourceBundle;
 
@@ -49,5 +46,10 @@ public class LoginController {
         bt_signup.setText(currentRB.getString("signup"));
         lb_or.setText(currentRB.getString("or"));
         bt_leng.setText(currentRB.getString("leng"));
+    }
+
+    public void signIn(ActionEvent actionEvent) throws IOException {
+        AnchorPane newAP = FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
+        gp.getChildren().setAll(newAP);
     }
 }

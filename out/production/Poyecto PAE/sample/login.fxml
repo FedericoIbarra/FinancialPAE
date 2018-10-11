@@ -42,7 +42,7 @@
 
         <VBox GridPane.columnIndex="1" GridPane.rowIndex="5" alignment="CENTER">
             <children>
-                <Button fx:id="bt_login"  styleClass="buttonIn"/>
+                <Button fx:id="bt_login"  styleClass="buttonIn" onAction="#signIn"/>
                 <Label fx:id="lb_or" styleClass="label">
                     <padding>
                         <Insets bottom="7.0" top="7.0" />
