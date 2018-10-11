@@ -9,6 +9,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import java.io.IOException;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class LoginController {
@@ -23,7 +24,7 @@ public class LoginController {
     @FXML AnchorPane gp;
     @FXML Button bt_leng;
 
-    ResourceBundle currentRB;
+    private ResourceBundle currentRB;
 
 
     @FXML
@@ -38,7 +39,7 @@ public class LoginController {
         gp.getChildren().setAll(gp2);
     }
 
-    public void changeLenguage() {
+    private void changeLenguage() {
         currentRB = I18N.getInstance().getResources();
         lb_pass.setText(currentRB.getString("password"));
         lb_user.setText(currentRB.getString("user"));
@@ -51,5 +52,13 @@ public class LoginController {
     public void signIn(ActionEvent actionEvent) throws IOException {
         AnchorPane newAP = FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
         gp.getChildren().setAll(newAP);
+    }
+
+    public void swap(ActionEvent actionEvent) {
+        I18N.getInstance().setLocale(new Locale(currentRB.getString("leng")));
+        changeLenguage();
+    }
+
+    public void showInfo(ActionEvent actionEvent) {
     }
 }

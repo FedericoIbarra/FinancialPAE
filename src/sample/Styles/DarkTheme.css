@@ -66,3 +66,9 @@
     -fx-font-size: 20pt;
     -fx-graphic: url('/sample/Media/GraphicsIcon.png');
 }
+
+.infoButton {
+    -fx-background-color: #383838;
+    -fx-text-fill: #BFC4A4;
+    -fx-font-size: 16pt;
+}

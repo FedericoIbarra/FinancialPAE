@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class SignUpController {
@@ -50,5 +51,10 @@ public class SignUpController {
         bt_send.setText(currentRB.getString("send"));
         bt_leng.setText(currentRB.getString("leng"));
 
+    }
+
+    public void swap(ActionEvent actionEvent) {
+        I18N.getInstance().setLocale(new Locale(currentRB.getString("leng")));
+        changeLenguage();
     }
 }
