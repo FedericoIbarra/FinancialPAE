@@ -19,7 +19,7 @@
 
     <Button fx:id="bt_leng" AnchorPane.leftAnchor="750" AnchorPane.topAnchor="7" styleClass="buttonUp" onAction="#swap"/>
 
-    <Button text="?" styleClass="infoButton" AnchorPane.bottomAnchor="7" AnchorPane.rightAnchor="7" onAction="#showInfo"/>
+    <Button text="?" styleClass="infoButton" AnchorPane.topAnchor="550" AnchorPane.leftAnchor="750" onAction="#showInfo"/>
 
     <StackPane AnchorPane.bottomAnchor="150" AnchorPane.topAnchor="120" AnchorPane.leftAnchor="300" AnchorPane.rightAnchor="150">
     <GridPane StackPane.alignment="CENTER" vgap="10" hgap="10">

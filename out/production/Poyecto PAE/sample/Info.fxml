@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.Info"
+            prefHeight="400.0" prefWidth="600.0"
+            fx:id="gp">
+
+    <Button AnchorPane.leftAnchor="7" AnchorPane.topAnchor="7" styleClass="buttonBack" onAction="#back"/>
+
+    <VBox AnchorPane.leftAnchor="275" AnchorPane.topAnchor="160" alignment="CENTER" spacing="10">
+        <Label text="Financial App" styleClass="titles3"/>
+        <Label text="Developed by:" styleClass="titles2">
+            <padding>
+                <Insets top="30.0"/>
+            </padding>
+        </Label>
+        <Label text="Javier Ochoa" styleClass="label"/>
+        <Label text="Federico Ibarra" styleClass="label"/>
+        <Label text="Bernardo Elizodno" styleClass="label"/>
+        <Label text="Diego Ascencio" styleClass="label"/>
+
+    </VBox>
+
+</AnchorPane>

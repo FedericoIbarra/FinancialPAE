@@ -46,13 +46,13 @@ public class MainScreen {
         bt_balance.setText("    " + currentRB.getString("generate").concat(currentRB.getString("generalBalance")));
         bt_graphics.setText("    " + currentRB.getString("generate").concat(currentRB.getString("graphics")));
         lb_title.setText("                    " + currentRB.getString("selectoption"));
-        bt_leng.setText(currentRB.getString("leng"));
+        /*bt_leng.setText(currentRB.getString("leng"));
 
         bt_leng.setOnAction(e -> {
             System.out.println("Si jala");
             I18N.getInstance().setLocale(new Locale(currentRB.getString("leng")));
             changeLenguage();
-        });
+        });*/
     }
 
     public void logOut(ActionEvent actionEvent) throws IOException {

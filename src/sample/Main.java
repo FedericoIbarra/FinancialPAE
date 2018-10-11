@@ -26,7 +26,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
 
-        I18N.getInstance().setLocale(Locale.ENGLISH);
+        I18N.getInstance().setLocale(Locale.getDefault());
         launch(args);
     }
 }

@@ -39,6 +39,12 @@
     -fx-font-size: 18pt;
 }
 
+.titles3 {
+    -fx-text-fill: #BFC4A4;
+    -fx-font-family: ".SF NS Display";
+    -fx-font-size: 30pt;
+}
+
 .moneyIcon {
     -fx-background-color: #383838;
     -fx-text-fill: #BFC4A4;

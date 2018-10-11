@@ -59,6 +59,8 @@ public class LoginController {
         changeLenguage();
     }
 
-    public void showInfo(ActionEvent actionEvent) {
+    public void showInfo(ActionEvent actionEvent) throws IOException {
+        AnchorPane newAP = FXMLLoader.load(getClass().getResource("Info.fxml"));
+        gp.getChildren().setAll(newAP);
     }
 }
