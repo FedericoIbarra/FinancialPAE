@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.StackPane?>
 
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane fx:id="gp" fx:controller="sample.LoginController"
+<AnchorPane fx:id="gp" fx:controller="sample.Controllers.LoginController"
             xmlns:fx="http://javafx.com/fxml" >
 
 

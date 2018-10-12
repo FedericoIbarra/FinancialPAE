@@ -5,7 +5,7 @@
 
 <?import javafx.geometry.Insets?>
 
-<AnchorPane fx:controller="sample.SignUpController" xmlns:fx="http://javafx.com/fxml" fx:id="gp">
+<AnchorPane fx:controller="sample.Controllers.SignUpController" xmlns:fx="http://javafx.com/fxml" fx:id="gp">
     <children>
         <Button fx:id="bt_leng" AnchorPane.leftAnchor="750" AnchorPane.topAnchor="7" styleClass="buttonUp" onAction="#swap"/>
         <Button AnchorPane.leftAnchor="7" AnchorPane.topAnchor="7" styleClass="buttonBack" onAction="#back"/>

@@ -18,7 +18,7 @@ public class I18N {
     }
 
 
-    void setLocale(Locale lo) {
+    public void setLocale(Locale lo) {
         l = lo;
         rb = ResourceBundle.getBundle("sample.Resources.Resource", l);
     }

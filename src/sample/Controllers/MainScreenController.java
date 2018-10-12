@@ -1,4 +1,4 @@
-package sample;
+package sample.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -6,12 +6,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import sample.I18N;
 
 import java.io.IOException;
-import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class MainScreen {
+public class MainScreenController {
 
     private ResourceBundle currentRB;
     @FXML
@@ -46,6 +46,7 @@ public class MainScreen {
         bt_balance.setText("    " + currentRB.getString("generate").concat(currentRB.getString("generalBalance")));
         bt_graphics.setText("    " + currentRB.getString("generate").concat(currentRB.getString("graphics")));
         lb_title.setText("                    " + currentRB.getString("selectoption"));
+
         /*bt_leng.setText(currentRB.getString("leng"));
 
         bt_leng.setOnAction(e -> {
@@ -56,7 +57,7 @@ public class MainScreen {
     }
 
     public void logOut(ActionEvent actionEvent) throws IOException {
-        AnchorPane gp2 = FXMLLoader.load(getClass().getResource("login.fxml"));
+        AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/login.fxml"));
         gp.getChildren().setAll(gp2);
     }
 

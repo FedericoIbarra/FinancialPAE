@@ -14,7 +14,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        root = FXMLLoader.load(getClass().getResource("Views/login.fxml"));
         primaryStage.setTitle("Financial App");
         Scene sc = new Scene(root, 800, 600);
         sc.getStylesheets().add("sample/Styles/DarkTheme.css");

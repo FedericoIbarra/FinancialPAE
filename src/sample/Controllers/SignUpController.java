@@ -1,4 +1,4 @@
-package sample;
+package sample.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import sample.I18N;
 
 import java.io.IOException;
 import java.util.Locale;
@@ -36,7 +37,7 @@ public class SignUpController {
     }
 
     public void back(ActionEvent actionEvent) throws IOException {
-        AnchorPane gp2 = FXMLLoader.load(getClass().getResource("login.fxml"));
+        AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/login.fxml"));
         gp.getChildren().setAll(gp2);
     }
 
