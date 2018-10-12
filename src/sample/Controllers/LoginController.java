@@ -29,6 +29,9 @@ public class LoginController {
     private ResourceBundle currentRB;
 
 
+    /**
+     * Initialize method for the view.
+     */
     @FXML
     public void initialize(){
 
@@ -36,11 +39,20 @@ public class LoginController {
 
     }
 
+    /**
+     * Mehtod for button Sign Up.
+     * @param actionEvent action for button.
+     * @throws IOException if FXML file is not found.
+     */
     public void signUp(ActionEvent actionEvent) throws IOException {
         AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/SignUp.fxml"));
         gp.getChildren().setAll(gp2);
     }
 
+
+    /**
+     * Change the global Bundle and this views language.
+     */
     private void changeLenguage() {
         currentRB = I18N.getInstance().getResources();
         lb_pass.setText(currentRB.getString("password"));
@@ -51,16 +63,31 @@ public class LoginController {
         bt_leng.setText(currentRB.getString("leng"));
     }
 
+    /**
+     * Mehtod for button Sign In.
+     * @param actionEvent action for button.
+     * @throws IOException if FXML file is not found.
+     */
     public void signIn(ActionEvent actionEvent) throws IOException {
         AnchorPane newAP = FXMLLoader.load(getClass().getResource("../Views/MainScreen.fxml"));
         gp.getChildren().setAll(newAP);
     }
 
+    /**
+     * Mehtod for button Swap Language.
+     * @param actionEvent action for button.
+     * @throws IOException if FXML file is not found.
+     */
     public void swap(ActionEvent actionEvent) {
         I18N.getInstance().setLocale(new Locale(currentRB.getString("leng")));
         changeLenguage();
     }
 
+    /**
+     * Mehtod for button Show Info.
+     * @param actionEvent action for button.
+     * @throws IOException if FXML file is not found.
+     */
     public void showInfo(ActionEvent actionEvent) throws IOException {
         AnchorPane newAP = FXMLLoader.load(getClass().getResource("../Views/Info.fxml"));
         gp.getChildren().setAll(newAP);

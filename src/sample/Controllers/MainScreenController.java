@@ -16,7 +16,6 @@ public class MainScreenController {
     private ResourceBundle currentRB;
     @FXML
     AnchorPane gp;
-
     @FXML
     Button bt_add;
     @FXML
@@ -26,12 +25,12 @@ public class MainScreenController {
     @FXML
     Button bt_graphics;
     @FXML
-    Button bt_leng;
-
-    @FXML
     Label lb_title;
 
 
+    /**
+     * Initialize method.
+     */
     @FXML
     public void initialize() {
 
@@ -39,6 +38,10 @@ public class MainScreenController {
 
     }
 
+    /**
+     * Change language method.
+     * Change the global Resource Bundle adn local variables.
+     */
     private void changeLenguage() {
         currentRB = I18N.getInstance().getResources();
         bt_add.setText("     " + currentRB.getString("adddata"));
@@ -47,33 +50,46 @@ public class MainScreenController {
         bt_graphics.setText("    " + currentRB.getString("generate").concat(currentRB.getString("graphics")));
         lb_title.setText("                    " + currentRB.getString("selectoption"));
 
-        /*bt_leng.setText(currentRB.getString("leng"));
-
-        bt_leng.setOnAction(e -> {
-            System.out.println("Si jala");
-            I18N.getInstance().setLocale(new Locale(currentRB.getString("leng")));
-            changeLenguage();
-        });*/
     }
 
+    /**
+     * Method for Log Out button.
+     * @param actionEvent action of the button.
+     * @throws IOException if FXML is not found.
+     */
     public void logOut(ActionEvent actionEvent) throws IOException {
         AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/login.fxml"));
         gp.getChildren().setAll(gp2);
     }
 
+    /**
+     * Method for AddInfo button.
+     * @param actionEvent action of button.
+     */
     public void add(ActionEvent actionEvent) {
         System.out.println("Si jala add");
     }
 
+    /**
+     * Method for ResultsState button.
+     * @param actionEvent action of button.
+     */
     public void state(ActionEvent actionEvent) {
         System.out.println("Si jala state");
     }
 
+    /**
+     * Method for GeneralBalance button.
+     * @param actionEvent action of button.
+     */
     public void balance(ActionEvent actionEvent) {
         System.out.println("Si jala balance");
     }
 
-
+    /**
+     * Method for ShowGraphics button.
+     * @param actionEvent action of button.
+     */
     public void graphics(ActionEvent actionEvent) {
         System.out.println("Si jala graphics");
     }

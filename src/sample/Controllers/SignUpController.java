@@ -28,7 +28,9 @@ public class SignUpController {
 
     ResourceBundle currentRB;
 
-
+    /**
+     * Initialize method.
+     */
     @FXML
     public void initialize(){
 
@@ -36,11 +38,20 @@ public class SignUpController {
 
     }
 
+    /**
+     * Method for Back button.
+     * @param actionEvent action of the button.
+     * @throws IOException if FXML is not found.
+     */
     public void back(ActionEvent actionEvent) throws IOException {
         AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/login.fxml"));
         gp.getChildren().setAll(gp2);
     }
 
+    /**
+     * Change language method.
+     * Change the local variables.
+     */
     public void changeLenguage () {
         currentRB = I18N.getInstance().getResources();
         lb_name.setText(currentRB.getString("name"));
@@ -54,6 +65,10 @@ public class SignUpController {
 
     }
 
+    /**
+     * Change language method.
+     * Change the global Resource Bundle.
+     */
     public void swap(ActionEvent actionEvent) {
         I18N.getInstance().setLocale(new Locale(currentRB.getString("leng")));
         changeLenguage();
