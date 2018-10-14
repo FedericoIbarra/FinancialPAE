@@ -65,9 +65,11 @@ public class MainScreenController {
     /**
      * Method for AddInfo button.
      * @param actionEvent action of button.
+     * @throws IOException if FXML is not found.
      */
-    public void add(ActionEvent actionEvent) {
-        System.out.println("Si jala add");
+    public void add(ActionEvent actionEvent) throws IOException {
+        AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/EntryView.fxml"));
+        gp.getChildren().setAll(gp2);
     }
 
     /**
