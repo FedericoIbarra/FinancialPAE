@@ -84,7 +84,9 @@ public class MainScreenController {
      * Method for GeneralBalance button.
      * @param actionEvent action of button.
      */
-    public void balance(ActionEvent actionEvent) {
+    public void balance(ActionEvent actionEvent) throws IOException {
+        AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/GenerateBalanceControlerDates.fxml"));
+        gp.getChildren().setAll(gp2);
         System.out.println("Si jala balance");
     }
 
