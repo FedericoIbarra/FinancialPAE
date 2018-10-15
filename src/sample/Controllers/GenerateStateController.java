@@ -46,7 +46,6 @@ public class GenerateStateController {
 	        GFinancieros.setText(currentRB.getString("GFinancieros"));
 	        generar.setText(currentRB.getString("GenerarEstadoResultado"));
 	        salir.setText(currentRB.getString("SalirEstadoResultado"));
-	        
 	    }
 	 
 	 public void generar(ActionEvent actionEvent) {
