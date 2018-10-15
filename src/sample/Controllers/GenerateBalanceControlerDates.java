@@ -61,6 +61,7 @@ public class GenerateBalanceControlerDates {
 
 	/**
 	 * Change language method. Change the global Resource Bundle.
+
 	 */
 	public void swap(ActionEvent actionEvent) {
 		I18N.getInstance().setLocale(new Locale(currentRB.getString("leng")));

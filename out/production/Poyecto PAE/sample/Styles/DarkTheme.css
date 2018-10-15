@@ -1,5 +1,6 @@
 .root {
     -fx-background-color: #383838;
+    -fx-opacity: 10;
 }
 
 .label {

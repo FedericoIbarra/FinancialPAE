@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="382.0" prefWidth="419.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1"
+fx:controller="sample.Controllers.GenerateStateController">
+   <children>
+      <VBox  alignment="CENTER" AnchorPane.leftAnchor="150">
+         <children>
+            <Label fx:id="titulo" alignment="TOP_LEFT" prefHeight="99.0" prefWidth="408.0"  textFill="#0f9c62">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <GridPane prefHeight="274.0" prefWidth="421.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="152.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="270.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+               
+                  <Label fx:id="ventas" styleClass="label"  textFill="#bfc4a4" />
+                  <Label fx:id="CVentas" styleClass="label"  textFill="#bfc4a4" GridPane.rowIndex="1" />
+                  <Label fx:id="GAdministracion" styleClass="label"  textFill="#bfc4a4" GridPane.rowIndex="2" />
+                  <Label fx:id="GVentas" styleClass="label"  textFill="#bfc4a4" GridPane.rowIndex="3" />
+                  <Label fx:id="GFinancieros" styleClass="label"  textFill="#bfc4a4" GridPane.rowIndex="4" />
+                  <Button fx:id="generar" styleClass="buttonIn" mnemonicParsing="false" textFill="#383838" GridPane.columnIndex="1" GridPane.rowIndex="5"
+                  onAction="#generar"  />
+                  <TextField fx:id="tfVentas" styleClass = "TextField" GridPane.columnIndex="1" />
+                  <TextField fx:id="tfCVentas" styleClass = "TextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="tfGAdmimnistracion" styleClass = "TextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="tfGVentas" styleClass = "TextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="tfGFinancierots" styleClass = "TextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </GridPane>
+            <Button fx:id="salir" styleClass="buttonIn" mnemonicParsing="false" prefHeight="9.0" prefWidth="71.0" onAction="#salirEstadoResultado">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -76,7 +76,9 @@ public class MainScreenController {
      * Method for ResultsState button.
      * @param actionEvent action of button.
      */
-    public void state(ActionEvent actionEvent) {
+    public void state(ActionEvent actionEvent) throws IOException {
+        AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/GenerateState.fxml"));
+        gp.getChildren().setAll(gp2);
         System.out.println("Si jala state");
     }
 
@@ -85,7 +87,7 @@ public class MainScreenController {
      * @param actionEvent action of button.
      */
     public void balance(ActionEvent actionEvent) throws IOException {
-        AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/GenerateBalanceControlerDates.fxml"));
+        AnchorPane gp2 = FXMLLoader.load (getClass().getResource("../Views/GenerateBalanceControlerDates.fxml"));
         gp.getChildren().setAll(gp2);
         System.out.println("Si jala balance");
     }
