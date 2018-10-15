@@ -1,16 +1,19 @@
 package sample.Controllers;
 
+import java.io.IOException;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import sample.I18N;
 
-public class GenerateStateController 
-{
+public class GenerateStateController {
+	@FXML AnchorPane gp;
 	@FXML Label titulo;
 	@FXML Label ventas;
 	@FXML Label CVentas;
@@ -50,8 +53,10 @@ public class GenerateStateController
 	        System.out.println("Si jala generar");
 	    }
 	 
-	 public void salirEstadoResultado(ActionEvent actionEvent) {
-	        System.out.println("Si jala salir");
+	 public void salirEstadoResultado(ActionEvent actionEvent) throws IOException {
+		 AnchorPane newAP = FXMLLoader.load(getClass().getResource("../Views/MainScreen.fxml"));
+		 gp.getChildren().setAll(newAP);
+	 	System.out.println("Si jala salir");
 	    }
 	
 

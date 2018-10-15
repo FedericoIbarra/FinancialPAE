@@ -13,7 +13,7 @@
 
 
 <AnchorPane prefHeight="382.0" prefWidth="419.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1"
-fx:controller="sample.Controllers.GenerateStateController">
+fx:controller="sample.Controllers.GenerateStateController" fx:id="gp">
    <children>
       <VBox  alignment="CENTER" AnchorPane.leftAnchor="160">
          <children>
