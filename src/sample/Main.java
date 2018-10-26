@@ -5,12 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.util.Locale;
 
 public class Main extends Application {
 
-    public Parent root;
+    private Parent root;
 
     @Override
     public void start(Stage primaryStage) throws Exception{

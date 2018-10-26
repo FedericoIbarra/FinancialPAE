@@ -45,9 +45,9 @@ public class MainScreenController {
     private void changeLenguage() {
         currentRB = I18N.getInstance().getResources();
         bt_add.setText("     " + currentRB.getString("adddata"));
-        bt_state.setText("     " + currentRB.getString("generate").concat(currentRB.getString("resultState")));
-        bt_balance.setText("    " + currentRB.getString("generate").concat(currentRB.getString("generalBalance")));
-        bt_graphics.setText("    " + currentRB.getString("generate").concat(currentRB.getString("graphics")));
+        bt_state.setText("     " + currentRB.getString("generate").concat(" ").concat(currentRB.getString("resultState")));
+        bt_balance.setText("    " + currentRB.getString("generate").concat(" ").concat(currentRB.getString("generalBalance")));
+        bt_graphics.setText("    " + currentRB.getString("generate").concat(" ").concat(currentRB.getString("graphics")));
         lb_title.setText("                    " + currentRB.getString("selectoption"));
 
     }

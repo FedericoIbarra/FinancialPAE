@@ -52,13 +52,13 @@
                     <ComboBox fx:id="cb_categories" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 
                     <Label fx:id="lb_subcat" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
-                    <ComboBox fx:id="cb_subcategories" GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="text-field"/>
+                    <ComboBox fx:id="cb_subcategories" GridPane.columnIndex="1" GridPane.rowIndex="2" />
 
                     <Label fx:id="lb_amount" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
                     <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="text-field"/>
 
                     <padding>
-                        <Insets topRightBottomLeft="150.0"/>
+                        <Insets topRightBottomLeft="130.0"/>
                     </padding>
 
 

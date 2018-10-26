@@ -18,8 +18,8 @@ import java.util.ResourceBundle;
 
 public class EntryController {
 
-    @FXML AnchorPane gp;
     private ResourceBundle currentRB;
+    @FXML AnchorPane gp;
     @FXML Label lb_title;
     @FXML Label lb_amount;
     @FXML Label lb_category;
@@ -76,7 +76,6 @@ public class EntryController {
                subcategories.add(currentRB.getString("ee"));
                subcategories.add(currentRB.getString("inv"));
                subcategories.add(currentRB.getString("other"));
-
             } else if (newValue.intValue() == 1){
                 subcategories.add(currentRB.getString("debtcp"));
                 subcategories.add(currentRB.getString("debtlp"));
