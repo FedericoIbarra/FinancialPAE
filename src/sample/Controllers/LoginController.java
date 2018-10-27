@@ -8,9 +8,15 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import sample.DataModels.User;
 import sample.I18N;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -27,6 +33,7 @@ public class LoginController {
     @FXML Button bt_leng;
 
     private ResourceBundle currentRB;
+    private List<User> usersList;
 
 
     /**
@@ -35,8 +42,45 @@ public class LoginController {
     @FXML
     public void initialize(){
 
-        changeLenguage();
+        loadUsers();
+        changeLanguage();
 
+    }
+
+
+    /**
+     * Loads data from file into a List of users for future use.
+     */
+    private void loadUsers() {
+        usersList = new ArrayList<User>();
+
+        try {
+            FileInputStream fileInputStream = new FileInputStream("./src/sample/Data/users.data");
+            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+
+            while (fileInputStream.available() > 0) {
+                usersList.add((User) objectInputStream.readObject());
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+    /**
+     * Compare the given password and user name with the list.
+     * @param usr given username.
+     * @param psw given password.
+     * @return true if is matched.
+     */
+    private boolean compareUser(String usr, String psw) {
+        return usersList.stream().anyMatch(e -> usr.equals(e.getUsername()) && psw.equals(e.getPassword()));
     }
 
     /**
@@ -53,7 +97,7 @@ public class LoginController {
     /**
      * Change the global Bundle and this views language.
      */
-    private void changeLenguage() {
+    private void changeLanguage() {
         currentRB = I18N.getInstance().getResources();
         lb_pass.setText(currentRB.getString("password"));
         lb_user.setText(currentRB.getString("user"));
@@ -69,8 +113,17 @@ public class LoginController {
      * @throws IOException if FXML file is not found.
      */
     public void signIn(ActionEvent actionEvent) throws IOException {
-        AnchorPane newAP = FXMLLoader.load(getClass().getResource("../Views/MainScreen.fxml"));
-        gp.getChildren().setAll(newAP);
+
+        if(compareUser(tf_user.getText(), tf_password.getText())) {
+            System.out.println("Usuario aceptado");
+            AnchorPane newAP = FXMLLoader.load(getClass().getResource("../Views/MainScreen.fxml"));
+            gp.getChildren().setAll(newAP);
+        } else {
+            tf_password.setStyle("-fx-border-color: #2A2B24 #2A2B24 RED #2A2B24;");
+            tf_user.setStyle("-fx-border-color: #2A2B24 #2A2B24 RED #2A2B24;");
+            System.err.println("No encontrado");
+        }
+
     }
 
     /**
@@ -80,7 +133,7 @@ public class LoginController {
      */
     public void swap(ActionEvent actionEvent) {
         I18N.getInstance().setLocale(new Locale(currentRB.getString("leng")));
-        changeLenguage();
+        changeLanguage();
     }
 
     /**
