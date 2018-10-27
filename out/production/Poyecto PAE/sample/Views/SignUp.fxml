@@ -13,21 +13,21 @@
             <children>
 
                 <Label fx:id="lb_name" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="label"/>
-                <TextField fx:id="tf_name" GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="TextField"/>
+                <TextField fx:id="tf_name" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                 <Label fx:id="lb_user" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="label"/>
-                <TextField fx:id="tf_user" GridPane.columnIndex="1" GridPane.rowIndex="4" styleClass="TextField"/>
+                <TextField fx:id="tf_user" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                 <Label fx:id="lb_email" GridPane.columnIndex="1" GridPane.columnSpan="1" GridPane.rowIndex="5"/>
-                <TextField fx:id="tf_email" GridPane.columnIndex="1" GridPane.rowIndex="6" styleClass="TextField"/>
+                <TextField fx:id="tf_email" GridPane.columnIndex="1" GridPane.rowIndex="6" />
                 <Label fx:id="lb_email2" GridPane.columnIndex="1" GridPane.columnSpan="1" GridPane.rowIndex="7"/>
-                <TextField fx:id="tf_email2" GridPane.columnIndex="1" GridPane.rowIndex="8" styleClass="TextField"/>
+                <TextField fx:id="tf_email2" GridPane.columnIndex="1" GridPane.rowIndex="8" />
                 <Label fx:id="lb_pass" GridPane.columnIndex="1" GridPane.rowIndex="9" styleClass="label"/>
-                <PasswordField fx:id="tf_pass" GridPane.columnIndex="1" GridPane.rowIndex="10" styleClass="TextField"/>
+                <PasswordField fx:id="tf_pass" GridPane.columnIndex="1" GridPane.rowIndex="10" />
                 <Label fx:id="lb_pass2" GridPane.columnIndex="1" GridPane.rowIndex="11" styleClass="label"/>
-                <PasswordField fx:id="tf_pass2" GridPane.columnIndex="1" GridPane.rowIndex="12" styleClass="TextField"/>
+                <PasswordField fx:id="tf_pass2" GridPane.columnIndex="1" GridPane.rowIndex="12" />
 
                 <VBox GridPane.columnIndex="1" GridPane.rowIndex="13" alignment="CENTER">
                     <children>
-                        <Button fx:id="bt_send" styleClass="buttonIn"/>
+                        <Button fx:id="bt_send" styleClass="buttonIn" onAction="#send"/>
                     </children>
                     <padding>
                         <Insets bottom="16.0" left="16.0" right="16.0" top="20.0" />

@@ -7,7 +7,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import sample.I18N;
-
 import java.io.IOException;
 import java.util.ResourceBundle;
 
@@ -26,6 +25,8 @@ public class MainScreenController {
     Button bt_graphics;
     @FXML
     Label lb_title;
+    @FXML
+    Button bt_entries;
 
 
     /**
@@ -45,6 +46,7 @@ public class MainScreenController {
     private void changeLenguage() {
         currentRB = I18N.getInstance().getResources();
         bt_add.setText("     " + currentRB.getString("adddata"));
+        bt_entries.setText("    " + currentRB.getString("showtable"));
         bt_state.setText("     " + currentRB.getString("generate").concat(" ").concat(currentRB.getString("resultState")));
         bt_balance.setText("    " + currentRB.getString("generate").concat(" ").concat(currentRB.getString("generalBalance")));
         bt_graphics.setText("    " + currentRB.getString("generate").concat(" ").concat(currentRB.getString("graphics")));
@@ -101,4 +103,10 @@ public class MainScreenController {
     }
 
 
+    /**
+     * Method for ShowTable Button.
+     * @param actionEvent show table action for button.
+     */
+    public void showTable(ActionEvent actionEvent) {
+    }
 }

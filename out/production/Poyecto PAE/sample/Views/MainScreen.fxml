@@ -33,15 +33,16 @@
             </AnchorPane>
         </StackPane>
 
-        <VBox AnchorPane.leftAnchor="280" alignment="CENTER_LEFT" spacing="55" minWidth="600">
+        <VBox AnchorPane.leftAnchor="280" alignment="CENTER_LEFT" spacing="35" minWidth="600">
 
             <padding>
                 <Insets top="70.0"/>
             </padding>
 
             <children>
-                <Label fx:id="lb_title" styleClass="titles2" alignment="CENTER"/>
+                <Label fx:id="lb_title" styleClass="titles2"/>
                 <Button fx:id="bt_add"  styleClass="addButton" onAction="#add"/>
+                <Button fx:id="bt_entries" styleClass="showTableButton" onAction="#showTable"/>
                 <Button fx:id="bt_state"   styleClass="moneyIcon" onAction="#state"/>
                 <Button fx:id="bt_balance"  styleClass="balanceIcon" onAction="#balance"/>
                 <Button fx:id="bt_graphics"  styleClass="graphicsIcon" onAction="#graphics"/>
