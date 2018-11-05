@@ -38,9 +38,9 @@
         </VBox>
 
         <Label fx:id="lb_user" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="label"/>
-        <TextField fx:id="tf_user" GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="TextField"/>
+        <TextField fx:id="tf_user" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
         <Label fx:id="lb_pass" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="label"/>
-        <PasswordField fx:id="tf_password" GridPane.columnIndex="1" GridPane.rowIndex="4" styleClass="TextField"/>
+        <PasswordField fx:id="tf_password" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
 
         <VBox GridPane.columnIndex="1" GridPane.rowIndex="5" alignment="CENTER" spacing="15">
 
@@ -49,7 +49,7 @@
             <children>
 
                 <Button fx:id="bt_login" styleClass="buttonUp" onAction="#signIn"/>
-                <Label fx:id="lb_or" styleClass="label"/>
+                <Label fx:id="lb_or" styleClass="label" />
                 <Button fx:id="bt_signup" styleClass="buttonIn" onAction="#signUp"/>
             </children>
 

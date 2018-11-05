@@ -11,10 +11,9 @@ import javafx.scene.layout.AnchorPane;
 import sample.DataModels.User;
 import sample.I18N;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -38,6 +37,7 @@ public class SignUpController {
 
     private ResourceBundle currentRB;
     private User newUser;
+    private List<User> usersList;
     private String redLine = "-fx-border-color: #2A2B24 #2A2B24 RED #2A2B24;";
 
     /**
@@ -45,7 +45,7 @@ public class SignUpController {
      */
     @FXML
     public void initialize(){
-
+        loadUsers();
         changeLenguage();
 
     }
@@ -87,7 +87,7 @@ public class SignUpController {
     }
 
     public void send(ActionEvent actionEvent) throws IOException {
-        if(nullVerification() && equalsVerification(tf_pass, tf_pass2) && equalsVerification(tf_email, tf_email2)) {
+        if(nullVerification() && equalsVerification(tf_pass, tf_pass2) && equalsVerification(tf_email, tf_email2) && alredyExists(tf_user.getText())) {
 
             newUser = new User(tf_name.getText(), tf_user.getText(), tf_pass.getText(), tf_email.getText());
 
@@ -166,5 +166,46 @@ public class SignUpController {
         }
 
         return result;
+    }
+
+    /**
+     * Loads data from file into a List of users for future use.
+     */
+    private void loadUsers() {
+        usersList = new ArrayList<User>();
+
+        try {
+            FileInputStream fileInputStream = new FileInputStream("./src/sample/Data/users.data");
+            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+
+            while (fileInputStream.available() > 0) {
+                usersList.add((User) objectInputStream.readObject());
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+    /**
+     * Compare the user name with the list.
+     * @param usr given username.
+     * @return true if is matched.
+     */
+    private boolean alredyExists(String usr) {
+
+        if(usersList.stream().anyMatch(e -> usr.equals(e.getUsername()))) {
+            tf_user.setStyle("-fx-border-color: #2A2B24 #2A2B24 RED #2A2B24;");
+            return false;
+        } else {
+            return true;
+        }
+
     }
 }
