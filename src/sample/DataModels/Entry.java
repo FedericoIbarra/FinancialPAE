@@ -41,4 +41,8 @@ public class Entry implements Serializable {
         return amount;
     }
 
+    public LocalDate getDate(){
+        return date;
+    }
+
 }

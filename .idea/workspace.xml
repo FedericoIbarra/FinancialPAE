@@ -7,29 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="MainScreen view and controller">
-      <change afterPath="$PROJECT_DIR$/src/sample/DataModels/Entry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/DataModels/EntryTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Session.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/EntryController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/EntryController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/EntryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/EntryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/MainScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/MainScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/SignUpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Data/users.data" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Data/users.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Styles/DarkTheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Styles/DarkTheme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Views/EntryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Views/EntryView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Views/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Views/MainScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Views/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controllers/EntryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controllers/EntryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controllers/MainScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controllers/MainScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controllers/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controllers/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Data/users.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Data/users.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Styles/DarkTheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Styles/DarkTheme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Views/EntryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Views/EntryView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Views/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Views/MainScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Views/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Data/fede.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Data/fede.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/DataModels/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DataModels/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/DataModels/EntryTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DataModels/EntryTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Session.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,7 +91,7 @@
           <entry key="css" value="764" />
           <entry key="dummy" value="20" />
           <entry key="fxml" value="2986" />
-          <entry key="java" value="8762" />
+          <entry key="java" value="9073" />
           <entry key="properties" value="1319" />
           <entry key="txt" value="81" />
         </counts>
@@ -116,7 +99,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="764" />
-          <entry key="JAVA" value="8762" />
+          <entry key="JAVA" value="9073" />
           <entry key="PLAIN_TEXT" value="101" />
           <entry key="Properties" value="1319" />
           <entry key="XML" value="2986" />
@@ -153,11 +136,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controllers/EntryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2025">
-              <caret line="153" column="23" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
+            <state relative-caret-position="1500">
+              <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,10 +151,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/DataModels/EntryTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="-4">
+              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#468#469#0" expanded="true" />
                 <element signature="e#500#501#0" expanded="true" />
                 <element signature="e#624#625#0" expanded="true" />
@@ -199,8 +184,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controllers/MainScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="117" column="66" lean-forward="true" selection-start-line="117" selection-start-column="66" selection-end-line="117" selection-end-column="66" />
+            <state relative-caret-position="326">
+              <caret line="124" column="47" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,11 +193,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Session.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+            <state relative-caret-position="107">
+              <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#435#436#0" expanded="true" />
@@ -237,10 +222,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/DataModels/Entry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="359">
+              <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1032#1033#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -317,11 +304,11 @@
         <option value="$PROJECT_DIR$/src/sample/Views/login.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/sample/Views/EntryView.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Controllers/EntryController.java" />
         <option value="$PROJECT_DIR$/src/sample/DataModels/Entry.java" />
         <option value="$PROJECT_DIR$/src/sample/DataModels/EntryTable.java" />
-        <option value="$PROJECT_DIR$/src/sample/Session.java" />
         <option value="$PROJECT_DIR$/src/sample/Controllers/MainScreenController.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controllers/EntryController.java" />
+        <option value="$PROJECT_DIR$/src/sample/Session.java" />
       </list>
     </option>
   </component>
@@ -414,7 +401,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541685953265" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541686744643" />
     <property name="dynamic.classpath" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -558,7 +545,7 @@
       <workItem from="1541509206490" duration="313000" />
       <workItem from="1541513403329" duration="2215000" />
       <workItem from="1541541577719" duration="2474000" />
-      <workItem from="1541605009934" duration="12195000" />
+      <workItem from="1541605009934" duration="12982000" />
     </task>
     <task id="LOCAL-00001" summary="Blue improvement">
       <created>1539212743823</created>
@@ -592,7 +579,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87615000" />
+    <option name="totallyTimeSpent" value="88402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -825,49 +812,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DataModels/Entry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Data/users.data">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DataModels/EntryTable.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Controllers/EntryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="1500">
+          <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -882,20 +835,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/DataModels/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/DataModels/EntryTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controllers/MainScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="117" column="66" lean-forward="true" selection-start-line="117" selection-start-column="66" selection-end-line="117" selection-end-column="66" />
+        <state relative-caret-position="326">
+          <caret line="124" column="47" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controllers/EntryController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Session.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="153" column="23" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
+        <state relative-caret-position="107">
+          <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

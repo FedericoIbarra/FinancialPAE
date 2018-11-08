@@ -14,13 +14,13 @@ public class EntryTable implements Serializable {
     private final SimpleFloatProperty amount;
     private final SimpleStringProperty date;
 
-    public EntryTable(String reference, int category, int subcategory, float amount, LocalDate date) {
+    public EntryTable(Entry entry) {
 
-        this.reference = new SimpleStringProperty(reference);
-        this.category = new SimpleIntegerProperty(category);
-        this.subcategory = new SimpleIntegerProperty(subcategory);
-        this.amount = new SimpleFloatProperty(amount);
-        this.date = new SimpleStringProperty(date.toString());
+        this.reference = new SimpleStringProperty(entry.getReference());
+        this.category = new SimpleIntegerProperty(entry.getCategory());
+        this.subcategory = new SimpleIntegerProperty(entry.getSubcategory());
+        this.amount = new SimpleFloatProperty(entry.getAmount());
+        this.date = new SimpleStringProperty(entry.getDate().toString());
 
     }
 

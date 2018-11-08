@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import sample.DataModels.Entry;
+import sample.DataModels.EntryTable;
 import sample.I18N;
 import sample.Session;
 
@@ -115,8 +116,12 @@ public class MainScreenController {
      * @param actionEvent show table action for button.
      */
     public void showTable(ActionEvent actionEvent) {
-        ObservableList<Entry> list = Session.getSession().getData();
+        ObservableList<Entry> list = Session.getSession().getData(false);
 
         list.forEach(e -> System.out.println(e));
+
+        ObservableList<EntryTable> lsita= Session.getSession().getData(true);
+
+        lsita.forEach(e -> System.out.println(e));
     }
 }

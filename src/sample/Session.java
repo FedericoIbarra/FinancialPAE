@@ -3,6 +3,7 @@ package sample;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import sample.DataModels.Entry;
+import sample.DataModels.EntryTable;
 import sample.DataModels.User;
 
 import java.io.*;
@@ -63,25 +64,30 @@ public class Session {
 
     /**
      * Get data from filesystem.
+     * @param asTable true if the data is for Table, false if it's raw data.
      * @return List of entries.
      */
 
-    public ObservableList getData () {
+    public ObservableList getData (boolean asTable) {
 
-        ObservableList data = FXCollections.observableArrayList();
+        ObservableList<Entry> data = FXCollections.observableArrayList();
+        ObservableList<EntryTable> tableData = FXCollections.observableArrayList();
 
-        System.out.println("No carga el archivo");
         try {
             fileInputStream = new FileInputStream("./src/sample/Data/" + filename);
             objectInputStream = new ObjectInputStream(fileInputStream);
-            System.out.println("Si carga el archivo");
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         try {
           while (fileInputStream.available() > 0) {
-              data.add((Entry) objectInputStream.readObject());
+              if (asTable){
+                  tableData.add(new EntryTable((Entry) objectInputStream.readObject()));
+              } else {
+                  data.add((Entry) objectInputStream.readObject());
+              }
+
           }
           objectInputStream.close();
           fileInputStream.close();
@@ -91,7 +97,8 @@ public class Session {
             e.printStackTrace();
         }
 
-        return data;
+        if(asTable) return tableData;
+        else return data;
     }
 
 }
