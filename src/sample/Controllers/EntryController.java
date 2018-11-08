@@ -35,10 +35,12 @@ public class EntryController {
     @FXML Label lb_reference;
     @FXML Label lb_name;
     @FXML Button bt_add;
+    @FXML Button bt_back;
     @FXML ComboBox cb_categories;
     @FXML ComboBox cb_subcategories;
     @FXML TextField tf_reference;
     @FXML TextField tf_amount;
+
 
     private ObservableList<String> categories = FXCollections.observableArrayList();
     private ObservableList<String> subcategories;
@@ -66,6 +68,7 @@ public class EntryController {
         lb_subcat.setText(currentRB.getString("subcategory"));
         lb_amount.setText(currentRB.getString("amount"));
         bt_add.setText(currentRB.getString("adddata"));
+        bt_back.setText(currentRB.getString("SalirEstadoResultado"));
     }
 
     private void fillCategories() {
@@ -176,5 +179,14 @@ public class EntryController {
         }
 
         return result;
+    }
+
+    public void enterKey(ActionEvent actionEvent) throws IOException {
+        submitData(null);
+    }
+
+    public void back(ActionEvent actionEvent) throws IOException {
+        AnchorPane newAP = FXMLLoader.load(getClass().getResource("../Views/MainScreen.fxml"));
+        gp.getChildren().setAll(newAP);
     }
 }
