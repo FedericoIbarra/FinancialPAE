@@ -40,7 +40,7 @@
         <Label fx:id="lb_user" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="label"/>
         <TextField fx:id="tf_user" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
         <Label fx:id="lb_pass" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="label"/>
-        <PasswordField fx:id="tf_password" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        <PasswordField fx:id="tf_password" GridPane.columnIndex="1" GridPane.rowIndex="4" onAction="#enterKey"/>
 
         <VBox GridPane.columnIndex="1" GridPane.rowIndex="5" alignment="CENTER" spacing="15">
 

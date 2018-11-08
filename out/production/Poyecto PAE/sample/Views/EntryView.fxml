@@ -23,7 +23,7 @@
                     </image>
                 </ImageView>
 
-                <Label text="El Jeff Bezos" fx:id="lb_name" styleClass="titles" />
+                <Label fx:id="lb_name" styleClass="titles" />
 
                 <padding>
                     <Insets top="45.0" />
@@ -46,7 +46,7 @@
                 <Label fx:id="lb_title" styleClass="titles3 "/>
                 <GridPane alignment="CENTER" vgap="20" hgap="15">
                     <Label fx:id="lb_reference" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
-                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                    <TextField fx:id="tf_reference" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
 
                     <Label fx:id="lb_category" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
                     <ComboBox fx:id="cb_categories" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
@@ -55,7 +55,7 @@
                     <ComboBox fx:id="cb_subcategories" GridPane.columnIndex="1" GridPane.rowIndex="2" />
 
                     <Label fx:id="lb_amount" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
-                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="text-field"/>
+                    <TextField fx:id="tf_amount" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="text-field"/>
 
                     <padding>
                         <Insets topRightBottomLeft="130.0"/>

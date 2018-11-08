@@ -1,12 +1,16 @@
 package sample.Controllers;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import sample.DataModels.Entry;
 import sample.I18N;
+import sample.Session;
+
 import java.io.IOException;
 import java.util.ResourceBundle;
 
@@ -27,6 +31,8 @@ public class MainScreenController {
     Label lb_title;
     @FXML
     Button bt_entries;
+    @FXML
+    Label lb_name;
 
 
     /**
@@ -45,6 +51,7 @@ public class MainScreenController {
      */
     private void changeLenguage() {
         currentRB = I18N.getInstance().getResources();
+        lb_name.setText(Session.getSession().getUser());
         bt_add.setText("     " + currentRB.getString("adddata"));
         bt_entries.setText("    " + currentRB.getString("showtable"));
         bt_state.setText("     " + currentRB.getString("generate").concat(" ").concat(currentRB.getString("resultState")));
@@ -108,5 +115,8 @@ public class MainScreenController {
      * @param actionEvent show table action for button.
      */
     public void showTable(ActionEvent actionEvent) {
+        ObservableList<Entry> list = Session.getSession().getData();
+
+        list.forEach(e -> System.out.println(e));
     }
 }

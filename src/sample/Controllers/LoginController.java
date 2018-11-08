@@ -10,6 +10,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import sample.DataModels.User;
 import sample.I18N;
+import sample.Session;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -18,7 +20,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
-import java.util.function.Function;
 
 
 public class LoginController {
@@ -116,7 +117,8 @@ public class LoginController {
     public void signIn(ActionEvent actionEvent) throws IOException {
 
         if(compareUser(tf_user.getText(), tf_password.getText())) {
-            System.out.println("Usuario aceptado");
+            usersList = null;
+            Session.getSession().setUser(tf_user.getText());
             AnchorPane newAP = FXMLLoader.load(getClass().getResource("../Views/MainScreen.fxml"));
             gp.getChildren().setAll(newAP);
         } else {
@@ -145,5 +147,14 @@ public class LoginController {
     public void showInfo(ActionEvent actionEvent) throws IOException {
         AnchorPane newAP = FXMLLoader.load(getClass().getResource("../Views/Info.fxml"));
         gp.getChildren().setAll(newAP);
+    }
+
+    /**
+     * Methor for the Enter Key in textfields.
+     * @param actionEvent Enter Key.
+     * @throws IOException if FXML is not found.
+     */
+    public void enterKey(ActionEvent actionEvent) throws IOException {
+        signIn(null);
     }
 }

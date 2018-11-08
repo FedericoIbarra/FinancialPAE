@@ -10,7 +10,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import sample.DataModels.User;
 import sample.I18N;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -107,6 +106,7 @@ public class SignUpController {
                 e.printStackTrace();
             }
 
+            usersList = null;
             AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/login.fxml"));
             gp.getChildren().setAll(gp2);
         }

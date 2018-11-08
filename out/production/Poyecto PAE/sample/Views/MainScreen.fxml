@@ -20,7 +20,7 @@
                     </image>
                 </ImageView>
 
-                <Label text="El Jeff Bezos" fx:id="lb_name" styleClass="titles" />
+                <Label text="Jeff Bezos" fx:id="lb_name" styleClass="titles" />
 
                 <padding>
                     <Insets top="45.0" />

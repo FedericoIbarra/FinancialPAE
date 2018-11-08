@@ -10,24 +10,35 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import sample.DataModels.Entry;
 import sample.I18N;
+import sample.Session;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 public class EntryController {
 
     private ResourceBundle currentRB;
+    private boolean categoryisSelected;
+    private boolean subcategoryisSelected;
+    private int categoryInteger;
+    private int subcategoryInteger;
     @FXML AnchorPane gp;
     @FXML Label lb_title;
     @FXML Label lb_amount;
     @FXML Label lb_category;
     @FXML Label lb_subcat;
     @FXML Label lb_reference;
+    @FXML Label lb_name;
     @FXML Button bt_add;
     @FXML ComboBox cb_categories;
     @FXML ComboBox cb_subcategories;
+    @FXML TextField tf_reference;
+    @FXML TextField tf_amount;
 
     private ObservableList<String> categories = FXCollections.observableArrayList();
     private ObservableList<String> subcategories;
@@ -37,6 +48,8 @@ public class EntryController {
      */
     @FXML
     public void initialize(){
+        categoryisSelected = false;
+        subcategoryisSelected = false;
         changeLenguage();
         fillCategories();
     }
@@ -46,6 +59,7 @@ public class EntryController {
      */
     private void changeLenguage() {
         currentRB = I18N.getInstance().getResources();
+        lb_name.setText(Session.getSession().getUser());
         lb_title.setText(currentRB.getString("entry"));
         lb_reference.setText(currentRB.getString("reference"));
         lb_category.setText(currentRB.getString("category"));
@@ -60,6 +74,7 @@ public class EntryController {
         categories.add(currentRB.getString("patr"));
         cb_categories.setItems(categories);
         cb_categories.getSelectionModel().selectedIndexProperty().addListener(changeCategory);
+        cb_subcategories.getSelectionModel().selectedIndexProperty().addListener(changeSubcategory);
     }
 
     /**
@@ -69,6 +84,8 @@ public class EntryController {
         @Override
         public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
             subcategories = FXCollections.observableArrayList();
+            categoryisSelected = true;
+            categoryInteger = newValue.intValue();
 
             if (newValue.intValue() == 0) {
                subcategories.add(currentRB.getString("cash"));
@@ -94,13 +111,70 @@ public class EntryController {
         }
     };
 
+    /**
+     * Change subcategory listener.
+     */
+    private ChangeListener<Number> changeSubcategory = new ChangeListener<Number>() {
+        @Override
+        public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+
+            subcategoryisSelected = true;
+            subcategoryInteger = newValue.intValue();
+
+        }
+    };
+
+
+    /**
+     * Log Out button event.
+     * @param actionEvent for the button.
+     * @throws IOException if FXML file is not found.
+     */
     public void logOut(ActionEvent actionEvent) throws IOException {
         AnchorPane newAP = FXMLLoader.load(getClass().getResource("../Views/login.fxml"));
         gp.getChildren().setAll(newAP);
     }
 
+    /**
+     * Submit data button
+     * @param actionEvent click on the button.
+     * @throws IOException if FXML file is not found.
+     */
     public void submitData(ActionEvent actionEvent) throws IOException {
-        AnchorPane newAP = FXMLLoader.load(getClass().getResource("../Views/MainScreen.fxml"));
-        gp.getChildren().setAll(newAP);
+        if (verifyEmpty()){
+            Session.getSession().pushEntry(new Entry(tf_reference.getText(), categoryInteger, subcategoryInteger, Float.valueOf(tf_amount.getText()), LocalDate.now()));
+            AnchorPane newAP = FXMLLoader.load(getClass().getResource("../Views/MainScreen.fxml"));
+            gp.getChildren().setAll(newAP);
+        }
+
+    }
+
+    /**
+     * Verrifies not null.
+     * @return boolean.
+     */
+    private boolean verifyEmpty() {
+
+        boolean result = true;
+
+        if(tf_reference.getText().isEmpty()) {
+            tf_reference.setStyle("-fx-border-color: #2A2B24 #2A2B24 RED #2A2B24;");
+            result =  false;
+        }
+
+        if (tf_amount.getText().isEmpty()){
+            tf_amount.setStyle("-fx-border-color: #2A2B24 #2A2B24 RED #2A2B24;");
+            result =  false;
+        }
+
+        if (!categoryisSelected) {
+            result =  false;
+        }
+
+        if (!subcategoryisSelected) {
+            result =  false;
+        }
+
+        return result;
     }
 }
