@@ -11,12 +11,7 @@ import javafx.scene.layout.AnchorPane;
 import sample.DataModels.User;
 import sample.I18N;
 import sample.Session;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -43,37 +38,11 @@ public class LoginController {
      */
     @FXML
     public void initialize(){
-
-        loadUsers();
+        usersList = Session.getSession().loadUsers();
         changeLanguage();
 
     }
 
-
-    /**
-     * Loads data from file into a List of users for future use.
-     */
-    private void loadUsers() {
-        usersList = new ArrayList<User>();
-
-        try {
-            FileInputStream fileInputStream = new FileInputStream("./src/sample/Data/users.data");
-            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-
-            while (fileInputStream.available() > 0) {
-                usersList.add((User) objectInputStream.readObject());
-            }
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
-
-    }
 
     /**
      * Compare the given password and user name with the list.

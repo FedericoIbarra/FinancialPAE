@@ -10,8 +10,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import sample.DataModels.User;
 import sample.I18N;
+import sample.Session;
 import java.io.*;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -44,7 +44,7 @@ public class SignUpController {
      */
     @FXML
     public void initialize(){
-        loadUsers();
+        usersList = Session.getSession().loadUsers();
         changeLenguage();
 
     }
@@ -89,23 +89,7 @@ public class SignUpController {
         if(nullVerification() && equalsVerification(tf_pass, tf_pass2) && equalsVerification(tf_email, tf_email2) && alredyExists(tf_user.getText())) {
 
             newUser = new User(tf_name.getText(), tf_user.getText(), tf_pass.getText(), tf_email.getText());
-
-            try {
-                FileOutputStream fileOutput = new FileOutputStream("./src/sample/Data/users.data");
-                ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutput);
-
-                objectOutputStream.writeObject(newUser);
-
-                objectOutputStream.close();
-                fileOutput.close();
-            } catch (FileNotFoundException e) {
-                System.out.println("Archivo no encontrado");
-                System.out.println("Working Directory = " +
-                        System.getProperty("user.dir"));
-                System.out.println();
-                e.printStackTrace();
-            }
-
+            Session.getSession().pushUser(newUser);
             usersList = null;
             AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/login.fxml"));
             gp.getChildren().setAll(gp2);
@@ -168,30 +152,7 @@ public class SignUpController {
         return result;
     }
 
-    /**
-     * Loads data from file into a List of users for future use.
-     */
-    private void loadUsers() {
-        usersList = new ArrayList<User>();
 
-        try {
-            FileInputStream fileInputStream = new FileInputStream("./src/sample/Data/users.data");
-            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-
-            while (fileInputStream.available() > 0) {
-                usersList.add((User) objectInputStream.readObject());
-            }
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
-
-    }
 
     /**
      * Compare the user name with the list.

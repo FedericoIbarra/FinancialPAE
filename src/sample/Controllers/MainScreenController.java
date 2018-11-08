@@ -118,10 +118,7 @@ public class MainScreenController {
     public void showTable(ActionEvent actionEvent) {
         ObservableList<Entry> list = Session.getSession().getData(false);
 
-        list.forEach(e -> System.out.println(e));
-
         ObservableList<EntryTable> lsita= Session.getSession().getData(true);
 
-        lsita.forEach(e -> System.out.println(e));
     }
 }

@@ -10,9 +10,9 @@ import java.time.LocalDate;
 public class Entry implements Serializable {
 
     private final String reference;
-    private final Integer category;
-    private final Integer subcategory;
-    private final Float amount;
+    private final int category;
+    private final int subcategory;
+    private final float amount;
     private final LocalDate date;
 
     public Entry(String reference, int category, int subcategory, float amount, LocalDate date) {
