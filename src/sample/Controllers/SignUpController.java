@@ -91,6 +91,7 @@ public class SignUpController {
             newUser = new User(tf_name.getText(), tf_user.getText(), tf_pass.getText(), tf_email.getText());
             Session.getSession().pushUser(newUser);
             usersList = null;
+            createUserFile();
             AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/login.fxml"));
             gp.getChildren().setAll(gp2);
         }
@@ -169,4 +170,18 @@ public class SignUpController {
         }
 
     }
+
+    private void createUserFile() {
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream("./src/sample/Data/" + tf_user.getText() + ".data");
+            ObjectOutputStream o = new ObjectOutputStream(fileOutputStream);
+
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

@@ -32,7 +32,6 @@ public class LoginController {
     private ResourceBundle currentRB;
     private List<User> usersList;
 
-
     /**
      * Initialize method for the view.
      */
@@ -40,9 +39,7 @@ public class LoginController {
     public void initialize(){
         usersList = Session.getSession().loadUsers();
         changeLanguage();
-
     }
-
 
     /**
      * Compare the given password and user name with the list.
@@ -63,7 +60,6 @@ public class LoginController {
         AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/SignUp.fxml"));
         gp.getChildren().setAll(gp2);
     }
-
 
     /**
      * Change the global Bundle and this views language.

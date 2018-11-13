@@ -34,16 +34,7 @@ public class Session {
         this.user = user;
         filename = user.concat(".data");
 
-        try {
-            FileOutputStream fileOutputStream = new FileOutputStream("./src/sample/Data/" + filename);
-            ObjectOutputStream o = new ObjectOutputStream(fileOutputStream);
-            o.close();
-            fileOutputStream.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
     }
 
     /**
@@ -71,11 +62,12 @@ public class Session {
                 }
             });
 
-            list = null;
-
 
             objectOutputStream.close();
             fileOutputStream.close();
+
+            list = null;
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -122,8 +114,10 @@ public class Session {
               }
 
           }
-//          objectInputStream.close();
+
+          objectInputStream.close();
           fileInputStream.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

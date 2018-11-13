@@ -8,10 +8,16 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="MainScreen view and controller">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Controllers/SignUpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Data/fede.data" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Data/fede.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Data/users.data" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Data/users.data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Poyecto PAE/sample/Session.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controllers/EntryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controllers/EntryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Data/fede.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Data/fede.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Views/EntryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Views/EntryView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controllers/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controllers/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Data/fede.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Data/users.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Data/users.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Session.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,18 +78,18 @@
     <session id="1481707442">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="30" />
+          <entry key="project.closed" value="32" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="7" />
-          <entry key="project.open.time.12" value="6" />
+          <entry key="project.open.time.12" value="8" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="5" />
           <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.opened" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -91,7 +97,7 @@
           <entry key="css" value="764" />
           <entry key="dummy" value="20" />
           <entry key="fxml" value="3066" />
-          <entry key="java" value="9774" />
+          <entry key="java" value="9854" />
           <entry key="properties" value="1319" />
           <entry key="txt" value="81" />
         </counts>
@@ -99,7 +105,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="764" />
-          <entry key="JAVA" value="9774" />
+          <entry key="JAVA" value="9854" />
           <entry key="PLAIN_TEXT" value="101" />
           <entry key="Properties" value="1319" />
           <entry key="XML" value="3066" />
@@ -108,7 +114,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="16" />
-          <entry key="data" value="17" />
+          <entry key="data" value="22" />
           <entry key="fxml" value="31" />
           <entry key="java" value="53" />
           <entry key="png" value="1" />
@@ -120,7 +126,7 @@
           <entry key="CSS" value="16" />
           <entry key="Image" value="1" />
           <entry key="JAVA" value="53" />
-          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="PLAIN_TEXT" value="22" />
           <entry key="Properties" value="17" />
           <entry key="XML" value="31" />
         </counts>
@@ -136,11 +142,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controllers/SignUpController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1141">
-              <caret line="117" column="4" lean-forward="true" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
+            <state relative-caret-position="212">
+              <caret line="175" column="118" selection-start-line="175" selection-start-column="118" selection-end-line="175" selection-end-column="118" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,8 +157,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1384">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="60">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,13 +169,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Session.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="61" column="93" selection-start-line="61" selection-start-column="93" selection-end-line="61" selection-end-column="93" />
+            <state relative-caret-position="178">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1876#1877#0" expanded="true" />
-                <element signature="e#1903#1904#0" expanded="true" />
-                <element signature="e#3321#3327#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,18 +180,18 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Views/EntryView.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="68" column="52" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
+            <state relative-caret-position="-3">
+              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controllers/EntryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
+            <state relative-caret-position="2550">
               <caret line="188" column="42" selection-start-line="188" selection-start-column="42" selection-end-line="188" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -277,11 +283,11 @@
         <option value="$PROJECT_DIR$/src/sample/DataModels/EntryTable.java" />
         <option value="$PROJECT_DIR$/src/sample/Controllers/MainScreenController.java" />
         <option value="$PROJECT_DIR$/src/sample/DataModels/Entry.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controllers/SignUpController.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/sample/Session.java" />
         <option value="$PROJECT_DIR$/src/sample/Views/EntryView.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Controllers/EntryController.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/sample/Session.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controllers/SignUpController.java" />
       </list>
     </option>
   </component>
@@ -307,6 +313,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,41 +337,16 @@
               <item name="Poyecto PAE" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Poyecto PAE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Poyecto PAE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
               <item name="Data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Poyecto PAE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Poyecto PAE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="DataModels" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Poyecto PAE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Poyecto PAE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Poyecto PAE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Poyecto PAE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,7 +363,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541702106991" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542069821454" />
     <property name="dynamic.classpath" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -389,7 +371,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -526,7 +508,9 @@
       <workItem from="1541513403329" duration="2215000" />
       <workItem from="1541541577719" duration="2474000" />
       <workItem from="1541605009934" duration="17753000" />
-      <workItem from="1541698894252" duration="2891000" />
+      <workItem from="1541698894252" duration="5805000" />
+      <workItem from="1542029238390" duration="1013000" />
+      <workItem from="1542069054682" duration="908000" />
     </task>
     <task id="LOCAL-00001" summary="Blue improvement">
       <created>1539212743823</created>
@@ -560,13 +544,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96064000" />
+    <option name="totallyTimeSpent" value="100899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.259375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.259375" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" weight="0.3296875" />
       <window_info id="Designer" order="3" />
@@ -575,7 +559,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28045326" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28045326" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -736,9 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -761,19 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DataModels/Entry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Data/users.data">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Data/fede.data">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -785,40 +753,10 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1384">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="61" column="93" selection-start-line="61" selection-start-column="93" selection-end-line="61" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1876#1877#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-            <element signature="e#3321#3327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/DataModels/EntryTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
           <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controllers/SignUpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1141">
-          <caret line="117" column="4" lean-forward="true" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -829,18 +767,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controllers/EntryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="188" column="42" selection-start-line="188" selection-start-column="42" selection-end-line="188" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/DataModels/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Data/sas.data">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Data/users.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Views/EntryView.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="68" column="52" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
+        <state relative-caret-position="-3">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controllers/EntryController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="188" column="42" selection-start-line="188" selection-start-column="42" selection-end-line="188" selection-end-column="42" />
+        <state relative-caret-position="60">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controllers/SignUpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="175" column="118" selection-start-line="175" selection-start-column="118" selection-end-line="175" selection-end-column="118" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
