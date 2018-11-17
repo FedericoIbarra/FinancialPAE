@@ -176,6 +176,8 @@ public class SignUpController {
             FileOutputStream fileOutputStream = new FileOutputStream("./src/sample/Data/" + tf_user.getText() + ".data");
             ObjectOutputStream o = new ObjectOutputStream(fileOutputStream);
 
+            o.close();
+            fileOutputStream.close();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
