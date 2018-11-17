@@ -43,9 +43,6 @@ public class Session {
      */
 
     public void pushEntry(Entry entry) {
-
-
-
         try {
             ObservableList<Entry> list = getData(false);
 
@@ -158,6 +155,74 @@ public class Session {
         return usersList;
     }
 
+    /**
+     * Delete an specific user
+     * @param userName
+     */
+    public void removeUser(String userName) {
+        List<User> usersList = new ArrayList<User>();
+
+        try {
+            FileInputStream fileInputStream = new FileInputStream("./src/sample/Data/users.data");
+            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+
+            while (fileInputStream.available() > 0) {
+                usersList.add((User) objectInputStream.readObject());
+            }
+
+            objectInputStream.close();
+            fileInputStream.close();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        usersList.removeIf(p->p.getUsername().equals(userName));
+        //Escribir toda la lista al archivo
+        try {
+            FileOutputStream fileOutput = new FileOutputStream("./src/sample/Data/users.data");
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutput);
+
+            usersList.forEach(e -> {
+                try {
+                    objectOutputStream.writeObject(e);
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            });
+
+            //Eliminar datos del usuario
+            if(!userName.equals("users")){
+                File fichero = new File("./src/sample/Data/"+userName+".data");
+
+                if (!fichero.exists()) {
+                    System.out.println("El archivo "+userName+".data"+" no existe.");
+                } else {
+                    fichero.delete();
+                    System.out.println("El archivo "+userName+" fue eliminado.");
+                }
+
+            }else System.out.println("do mames");
+
+            usersList = null;
+
+            objectOutputStream.close();
+            fileOutput.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("Archivo no encontrado");
+            System.out.println("Working Directory = " +
+                    System.getProperty("user.dir"));
+            System.out.println();
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     /**
      * Adds new users to file.
@@ -201,5 +266,18 @@ public class Session {
 
         return true;
     }
+
+
+    public static void main(String[] args) {
+    	Session s = new Session();
+
+    	System.out.println("Ususarios antiguos");
+    	s.loadUsers().forEach(p->System.out.println(p.getUsername()));
+    	s.removeUser("sas");
+
+    	//Borramos uno
+    	System.out.println("Ususarios actualizados");
+    	s.loadUsers().forEach(p->System.out.println(p.getUsername()));
+	}
 
 }
