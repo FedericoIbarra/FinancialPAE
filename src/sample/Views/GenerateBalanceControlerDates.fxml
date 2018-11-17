@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.HBox?>
 
 <AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
 	fx:controller="sample.Controllers.GenerateBalanceControlerDates" fx:id="gp">
@@ -30,10 +31,25 @@
 					<Label fx:id="lb_to" styleClass="label" />
 					<DatePicker fx:id="dp_to" />
 				</VBox>
+				<HBox AnchorPane.topAnchor="200" spacing="40">
+					<VBox spacing="10">
+						<Label fx:id="lb_activos" styleClass="titles2"/>
+						<Label fx:id="lb_pasivos" styleClass="titles2"/>
+						<Label fx:id="lb_capital" styleClass="titles2"/>
+						<Label fx:id="lb_total" styleClass="titles2"/>
+					</VBox>
+					<VBox spacing="10">
+						<Label fx:id="lb_Ractivos" text="activos :)" styleClass="titles2-1" />
+						<Label fx:id="lb_Rpasivos" text="pasivos :)" styleClass="titles2-1" />
+						<Label fx:id="lb_Rcapital" text="activos :)" styleClass="titles2-1"/>
+						<Label fx:id="lb_Rtotal" text="activos :)" styleClass="titles2-1"/>
+					</VBox>
+				</HBox>
+
 			</AnchorPane>
 			<AnchorPane>
 				<Button fx:id="b_Generate" styleClass="buttonIn"
-					AnchorPane.leftAnchor="315" AnchorPane.topAnchor="290" onAction="#generate" />
+					AnchorPane.leftAnchor="315" AnchorPane.topAnchor="60" onAction="#generate" />
 			</AnchorPane>
 		</VBox>
 	</children>

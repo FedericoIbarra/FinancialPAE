@@ -19,26 +19,20 @@
                         <Image url="https://specials-images.forbesimg.com/imageserve/5b8eb1b3a7ea434b99d54b36/960x0.jpg?fit=scale"/>
                     </image>
                 </ImageView>
-
                 <Label text="Jeff Bezos" fx:id="lb_name" styleClass="titles" />
-
                 <padding>
                     <Insets top="45.0" />
                 </padding>
-
             </VBox>
-
             <AnchorPane>
-                <Button text="Log Out" styleClass="buttonIn" AnchorPane.bottomAnchor="50" AnchorPane.leftAnchor="75" onAction="#logOut"/>
+                <Button fx:id="bt_logOut"  styleClass="buttonIn" AnchorPane.bottomAnchor="50" AnchorPane.leftAnchor="75" onAction="#logOut"/>
+                 <Button fx:id="bt_Remove"  styleClass="buttonRemove" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="10" onAction="#removeUser"/>
             </AnchorPane>
         </StackPane>
-
         <VBox AnchorPane.leftAnchor="280" alignment="CENTER_LEFT" spacing="35" minWidth="600">
-
             <padding>
                 <Insets top="70.0"/>
             </padding>
-
             <children>
                 <Label fx:id="lb_title" styleClass="titles2"/>
                 <Button fx:id="bt_add"  styleClass="addButton" onAction="#add"/>
