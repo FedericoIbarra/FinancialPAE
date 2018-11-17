@@ -3,53 +3,59 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.shape.Rectangle?>
+
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sample.Controllers.TableController"
-            prefHeight="400.0" prefWidth="600.0" fx:id="gp">
+            fx:controller="sample.Controllers.TableController" fx:id="gp">
 
-    <TableView fx:id="table">
-        <columns>
+    <VBox AnchorPane.leftAnchor="25" AnchorPane.topAnchor="25" spacing="20" alignment="CENTER">
 
-            <TableColumn text="Reference">
-                <cellValueFactory>
-                    <PropertyValueFactory property="reference"/>
-                </cellValueFactory>
-            </TableColumn>
+        <Label fx:id="lb_title" styleClass="titles2"/>
 
+        <TableView fx:id="table" minWidth="750">
+            <columns>
 
-            <TableColumn text="Category">
-                <cellValueFactory>
-                    <PropertyValueFactory property="category"/>
-                </cellValueFactory>
-            </TableColumn>
+                <TableColumn fx:id="col_reference" minWidth="150">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="reference"/>
+                    </cellValueFactory>
+                </TableColumn>
 
 
-            <TableColumn text="subcategory">
-                <cellValueFactory>
-                    <PropertyValueFactory property="subcategory"/>
-                </cellValueFactory>
-            </TableColumn>
+                <TableColumn fx:id="col_category" minWidth="150">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="category"/>
+                    </cellValueFactory>
+                </TableColumn>
 
 
-            <TableColumn text="amount">
-                <cellValueFactory>
-                    <PropertyValueFactory property="amount"/>
-                </cellValueFactory>
-            </TableColumn>
+                <TableColumn fx:id="col_sub" minWidth="150">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="subcategory"/>
+                    </cellValueFactory>
+                </TableColumn>
 
 
-            <TableColumn text="date">
-                <cellValueFactory>
-                    <PropertyValueFactory property="date"/>
-                </cellValueFactory>
-            </TableColumn>
-        </columns>
-    </TableView>
+                <TableColumn fx:id="col_amount" minWidth="150">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="amount"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+
+                <TableColumn fx:id="col_date" minWidth="150">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="date"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+
+        <Button text="Salir" styleClass="buttonUp" onAction="#goBack"/>
+
+    </VBox>
+
+
 
 </AnchorPane>
