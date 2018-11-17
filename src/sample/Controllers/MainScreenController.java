@@ -21,6 +21,10 @@ public class MainScreenController {
     @FXML
     AnchorPane gp;
     @FXML
+    Button bt_logOut;
+    @FXML
+    Button bt_Remove;
+    @FXML
     Button bt_add;
     @FXML
     Button bt_state;
@@ -53,6 +57,8 @@ public class MainScreenController {
     private void changeLenguage() {
         currentRB = I18N.getInstance().getResources();
         lb_name.setText(Session.getSession().getUser());
+        bt_logOut.setText(currentRB.getString("logOut"));
+        bt_Remove.setText(currentRB.getString("remove"));
         bt_add.setText("     " + currentRB.getString("adddata"));
         bt_entries.setText("    " + currentRB.getString("showtable"));
         bt_state.setText("     " + currentRB.getString("generate").concat(" ").concat(currentRB.getString("resultState")));
@@ -69,6 +75,18 @@ public class MainScreenController {
      */
     public void logOut(ActionEvent actionEvent) throws IOException {
         AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/login.fxml"));
+        gp.getChildren().setAll(gp2);
+    }
+
+    /**
+     * Method used to remove an specific user
+     * @param actionEvent action of the button.
+     * @throws IOException if FXML is not found.
+     */
+    public void removeUser(ActionEvent actionEvent) throws IOException {
+        AnchorPane gp2 = FXMLLoader.load(getClass().getResource("../Views/login.fxml"));
+        System.out.println(Session.getSession().getUser());
+        Session.getSession().removeUses();
         gp.getChildren().setAll(gp2);
     }
 
@@ -115,12 +133,10 @@ public class MainScreenController {
      * Method for ShowTable Button.
      * @param actionEvent show table action for button.
      */
-    public void showTable(ActionEvent actionEvent) throws IOException {
+    public void showTable(ActionEvent actionEvent) {
         ObservableList<Entry> list = Session.getSession().getData(false);
-        ObservableList<EntryTable> lsita= Session.getSession().getData(true);
 
-        AnchorPane gp2 = FXMLLoader.load (getClass().getResource("../Views/TableView.fxml"));
-        gp.getChildren().setAll(gp2);
+        ObservableList<EntryTable> lsita= Session.getSession().getData(true);
 
     }
 }

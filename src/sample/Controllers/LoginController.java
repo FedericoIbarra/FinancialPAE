@@ -48,6 +48,7 @@ public class LoginController {
      * @return true if is matched.
      */
     private boolean compareUser(String usr, String psw) {
+    	usersList = Session.getSession().loadUsers();
         return usersList.stream().anyMatch(e -> usr.equals(e.getUsername()) && psw.equals(e.getPassword()));
     }
 
