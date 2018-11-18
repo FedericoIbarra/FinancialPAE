@@ -133,10 +133,9 @@ public class MainScreenController {
      * Method for ShowTable Button.
      * @param actionEvent show table action for button.
      */
-    public void showTable(ActionEvent actionEvent) {
-        ObservableList<Entry> list = Session.getSession().getData(false);
-
-        ObservableList<EntryTable> lsita= Session.getSession().getData(true);
+    public void showTable(ActionEvent actionEvent) throws IOException {
+        AnchorPane gp2 = FXMLLoader.load (getClass().getResource("../Views/TableView.fxml"));
+        gp.getChildren().setAll(gp2);
 
     }
 }

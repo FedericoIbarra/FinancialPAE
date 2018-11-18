@@ -2,32 +2,32 @@
 
 .root {
     -fx-background-color: #2A2B24;
-    -fx-opacity: 10;
+    -fx-opacity: 10.0;
 
 }
 
 .label {
     -fx-text-fill: #BFC4A4;
-    -fx-font-size: 12pt;
+    -fx-font-size: 12.0pt;
 }
 
 .buttonIn {
     -fx-background-color: #664C77;
     -fx-text-fill: #D8D8D8;
-    -fx-background-radius: 2;
+    -fx-background-radius: 2.0;
 }
 
 .buttonUp {
     -fx-background-color: #BFC4A4;
     -fx-text-fill: #2A2B24;
-    -fx-background-radius: 2;
+    -fx-background-radius: 2.0;
 }
 
 .text-field {
     -fx-text-fill: #BFC4A4;
     -fx-background-color: #2A2B24;
-    -fx-background-radius: 0;
-    -fx-border-width: 1;
+    -fx-background-radius: 0.0;
+    -fx-border-width: 1.0;
     -fx-border-color: #2A2B24 #2A2B24 #BFC4A4 #2A2B24;
 }
 
@@ -38,56 +38,68 @@
 
 .titles {
     -fx-text-fill: #2A2B24;
-    -fx-font-size: 18pt;
+    -fx-font-size: 18.0pt;
 }
 
 .titles2 {
     -fx-text-fill: #664C77;
-    -fx-font-size: 18pt;
+    -fx-font-size: 18.0pt;
+}
+
+.titles2-1 {
+    -fx-font-size: 18.0pt;
+     -fx-text-fill: #BFC4A4;
 }
 
 .titles3 {
     -fx-text-fill: #BFC4A4;
-    -fx-font-size: 30pt;
+    -fx-font-size: 30.0pt;
 }
 
 .moneyIcon {
     -fx-background-color: #2A2B24;
     -fx-text-fill: #BFC4A4;
-    -fx-font-size: 20pt;
+    -fx-font-size: 20.0pt;
     -fx-graphic: url('/sample/Media/MoneyIcon.png');
 }
 
 .addButton {
     -fx-background-color: #2A2B24;
     -fx-text-fill: #BFC4A4;
-    -fx-font-size: 20pt;
+    -fx-font-size: 20.0pt;
     -fx-graphic: url('/sample/Media/AddIcon.png');
 }
 
 .balanceIcon {
     -fx-background-color: #2A2B24;
     -fx-text-fill: #BFC4A4;
-    -fx-font-size: 20pt;
+    -fx-font-size: 20.0pt;
     -fx-graphic: url('/sample/Media/BalanceIcon.png');
 }
 
 .graphicsIcon {
     -fx-background-color: #2A2B24;
     -fx-text-fill: #BFC4A4;
-    -fx-font-size: 20pt;
+    -fx-font-size: 20.0pt;
     -fx-graphic: url('/sample/Media/GraphicsIcon.png');
 }
 
 .infoButton {
     -fx-background-color: #2A2B24;
     -fx-text-fill: #BFC4A4;
-    -fx-font-size: 16pt;
+    -fx-font-size: 16.0pt;
 }
 
 .showTableButton {
     -fx-background-color: #2A2B24;
     -fx-text-fill: #BFC4A4;
-    -fx-font-size: 20pt;
+    -fx-font-size: 20.0pt;
     -fx-graphic: url('/sample/Media/TableIcon.png');
+}
+
+.buttonRemove{
+    -fx-background-color: #FF0000;
+    -fx-font-size: 7.0pt;
+    -fx-text-fill: #D8D8D8;
+    -fx-background-radius: 2.0;
 }

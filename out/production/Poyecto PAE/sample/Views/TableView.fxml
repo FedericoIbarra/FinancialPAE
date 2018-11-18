@@ -16,21 +16,21 @@
         <TableView fx:id="table" minWidth="750">
             <columns>
 
-                <TableColumn fx:id="col_reference" minWidth="150" styleClass="titles2">
+                <TableColumn fx:id="col_reference" minWidth="150">
                     <cellValueFactory>
                         <PropertyValueFactory property="reference"/>
                     </cellValueFactory>
                 </TableColumn>
 
 
-                <TableColumn fx:id="col_category" minWidth="150" styleClass="titles">
+                <TableColumn fx:id="col_category" minWidth="150">
                     <cellValueFactory>
                         <PropertyValueFactory property="category"/>
                     </cellValueFactory>
                 </TableColumn>
 
 
-                <TableColumn fx:id="col_sub" minWidth="150" styleClass="titles3">
+                <TableColumn fx:id="col_sub" minWidth="150">
                     <cellValueFactory>
                         <PropertyValueFactory property="subcategory"/>
                     </cellValueFactory>
