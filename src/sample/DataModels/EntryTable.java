@@ -1,12 +1,9 @@
 package sample.DataModels;
 
 import javafx.beans.property.SimpleFloatProperty;
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import sample.I18N;
-
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 public class EntryTable implements Serializable {
@@ -19,6 +16,10 @@ public class EntryTable implements Serializable {
 
     private ResourceBundle currentRB;
 
+    /**
+     * Constructor for EntryTable class.
+     * @param entry converts from Entry to EntryTable.
+     */
     public EntryTable(Entry entry) {
 
         currentRB = I18N.getInstance().getResources();

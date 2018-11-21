@@ -13,6 +13,7 @@
 
         <StackPane AnchorPane.leftAnchor="0">
             <Rectangle width="200" height="600" fill="#BFC4A4"/>
+
             <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" alignment="TOP_CENTER" spacing="15">
                 <ImageView layoutX="20.0" layoutY="20.0" fitHeight="100.0" fitWidth="100.0" preserveRatio="true">
                     <image>
@@ -24,11 +25,16 @@
                     <Insets top="45.0" />
                 </padding>
             </VBox>
+
             <AnchorPane>
-                <Button fx:id="bt_logOut"  styleClass="buttonIn" AnchorPane.bottomAnchor="50" AnchorPane.leftAnchor="75" onAction="#logOut"/>
-                 <Button fx:id="bt_Remove"  styleClass="buttonRemove" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="10" onAction="#removeUser"/>
+                <VBox alignment="CENTER" spacing="15" minWidth="200" maxWidth="200" AnchorPane.bottomAnchor="50">
+                    <Button fx:id="bt_logOut"  styleClass="buttonIn" onAction="#logOut"/>
+                    <Button fx:id="bt_Remove" styleClass="buttonRemove" onAction="#removeUser"/>
+                </VBox>
+
             </AnchorPane>
         </StackPane>
+
         <VBox AnchorPane.leftAnchor="280" alignment="CENTER_LEFT" spacing="35" minWidth="600">
             <padding>
                 <Insets top="70.0"/>
