@@ -31,6 +31,9 @@ public class TableController {
     @FXML TableColumn col_amount;
     @FXML TableColumn col_date;
 
+    /**
+     * Load data and language before display interface.
+     */
     @FXML
     public void initialize(){
 
@@ -41,6 +44,9 @@ public class TableController {
 
     }
 
+    /**
+     * Change language from the I18N instance.
+     */
     private void changeLanguage() {
 
         currentRB = I18N.getInstance().getResources();
@@ -54,6 +60,11 @@ public class TableController {
 
     }
 
+    /**
+     * Action listener for the Back button.
+     * @param actionEvent listener for the button.
+     * @throws IOException if FXML file is not found.
+     */
     public void goBack(ActionEvent actionEvent) throws IOException {
         AnchorPane newAP = FXMLLoader.load(getClass().getResource("../Views/MainScreen.fxml"));
         gp.getChildren().setAll(newAP);

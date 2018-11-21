@@ -25,8 +25,7 @@ public class EntryTable implements Serializable {
         currentRB = I18N.getInstance().getResources();
 
         this.reference = new SimpleStringProperty(entry.getReference());
-
-        //Category
+        
 
         if(entry.getCategory() == 0) {
             category = new SimpleStringProperty(currentRB.getString("act"));
@@ -65,6 +64,10 @@ public class EntryTable implements Serializable {
 
     }
 
+
+    /**
+     * Getters and Setters.
+     */
 
     public SimpleStringProperty referenceProperty() {
         return reference;
