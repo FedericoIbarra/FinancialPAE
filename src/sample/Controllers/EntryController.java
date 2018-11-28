@@ -33,7 +33,6 @@ public class EntryController {
     @FXML Label lb_category;
     @FXML Label lb_subcat;
     @FXML Label lb_reference;
-    @FXML Label lb_name;
     @FXML Button bt_add;
     @FXML Button bt_back;
     @FXML ComboBox cb_categories;
@@ -61,7 +60,6 @@ public class EntryController {
      */
     private void changeLenguage() {
         currentRB = I18N.getInstance().getResources();
-        lb_name.setText(Session.getSession().getUser());
         lb_title.setText(currentRB.getString("entry"));
         lb_reference.setText(currentRB.getString("reference"));
         lb_category.setText(currentRB.getString("category"));

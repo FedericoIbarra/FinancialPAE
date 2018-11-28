@@ -13,12 +13,8 @@
 <AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
 	fx:controller="sample.Controllers.GenerateBalanceControlerDates" fx:id="gp">
 	<children>
-		<Button fx:id="bt_leng" AnchorPane.leftAnchor="750"
-			AnchorPane.topAnchor="7" styleClass="buttonUp" onAction="#swap" />
-		<Button AnchorPane.leftAnchor="7" AnchorPane.topAnchor="7"
-			styleClass="buttonBack" onAction="#back" />
-		<VBox AnchorPane.leftAnchor="200">
-			<Label fx:id="lb_balance" styleClass="balanceIcon" />
+		<VBox minWidth="800" alignment="CENTER" AnchorPane.topAnchor="10">
+			<Label fx:id="lb_balance" styleClass="titles2" />
 		</VBox>
 		<VBox AnchorPane.topAnchor="80" AnchorPane.leftAnchor="315">
 			<Label fx:id="lb_title" styleClass="titles2" />
@@ -33,23 +29,31 @@
 				</VBox>
 				<HBox AnchorPane.topAnchor="200" spacing="40">
 					<VBox spacing="10">
-						<Label fx:id="lb_activos" styleClass="titles2"/>
-						<Label fx:id="lb_pasivos" styleClass="titles2"/>
-						<Label fx:id="lb_capital" styleClass="titles2"/>
-						<Label fx:id="lb_total" styleClass="titles2"/>
+						<Label fx:id="lb_activos" styleClass="label" />
+						<Label fx:id="lb_pasivos" styleClass="label" />
+						<Label fx:id="lb_capital" styleClass="label" />
+						<Label fx:id="lb_total" styleClass="label" />
 					</VBox>
 					<VBox spacing="10">
-						<Label fx:id="lb_Ractivos" text="activos :)" styleClass="titles2-1" />
-						<Label fx:id="lb_Rpasivos" text="pasivos :)" styleClass="titles2-1" />
-						<Label fx:id="lb_Rcapital" text="activos :)" styleClass="titles2-1"/>
-						<Label fx:id="lb_Rtotal" text="activos :)" styleClass="titles2-1"/>
+						<Label fx:id="lb_Ractivos" alignment="CENTER" minWidth="150"
+							text="" styleClass="text-field2" />
+						<Label fx:id="lb_Rpasivos" alignment="CENTER" minWidth="150"
+							text="" styleClass="text-field2" />
+						<Label fx:id="lb_Rcapital" alignment="CENTER" minWidth="150"
+							text="" styleClass="text-field2" />
+						<Label fx:id="lb_Rtotal" alignment="CENTER" minWidth="150"
+							text="" styleClass="text-field2" />
 					</VBox>
 				</HBox>
 
 			</AnchorPane>
 			<AnchorPane>
-				<Button fx:id="b_Generate" styleClass="buttonIn"
-					AnchorPane.leftAnchor="315" AnchorPane.topAnchor="60" onAction="#generate" />
+				<Button fx:id="b_Generate" styleClass="buttonIn" prefHeight="25.0"
+					prefWidth="79.0" AnchorPane.leftAnchor="265" AnchorPane.topAnchor="60"
+					onAction="#generate" />
+				<Button fx:id="exit" AnchorPane.leftAnchor="355"
+					AnchorPane.topAnchor="60" styleClass="buttonUp" onAction="#back"
+					prefHeight="25.0" prefWidth="79.0" />
 			</AnchorPane>
 		</VBox>
 	</children>

@@ -23,8 +23,6 @@ public class GenerateBalanceControlerDates {
 	@FXML
 	Label lb_title;
 	@FXML
-	Button bt_leng;
-	@FXML
 	Button b_Generate;
 	@FXML
 	Label lb_from;
@@ -55,6 +53,9 @@ public class GenerateBalanceControlerDates {
 	@FXML
 	DatePicker dp_to;
 
+	@FXML
+	Button exit;
+
 	ResourceBundle currentRB;
 
 	/**
@@ -83,7 +84,6 @@ public class GenerateBalanceControlerDates {
 	 */
 	public void changeLenguage() {
 		currentRB = I18N.getInstance().getResources();
-		bt_leng.setText(currentRB.getString("leng"));
 		lb_from.setText(currentRB.getString("from"));
 		lb_to.setText(currentRB.getString("to"));
 		lb_title.setText(currentRB.getString("selectdates"));
@@ -94,16 +94,9 @@ public class GenerateBalanceControlerDates {
 		lb_pasivos.setText(currentRB.getString("passives"));
 		lb_capital.setText(currentRB.getString("capitals"));
 		lb_total.setText(currentRB.getString("totals"));
+		exit.setText(currentRB.getString("graphicButtonExit"));
 	}
 
-	/**
-	 * Change language method. Change the global Resource Bundle.
-	 *
-	 */
-	public void swap(ActionEvent actionEvent) {
-		I18N.getInstance().setLocale(new Locale(currentRB.getString("leng")));
-		changeLenguage();
-	}
 
 	public void generate(ActionEvent actionEvent) {
 		// Observable list con los datos de entradas
@@ -136,9 +129,9 @@ public class GenerateBalanceControlerDates {
 		}
 		total = activos - (pasivos + capital);
 
-		lb_Ractivos.setText(String.valueOf(activos));
-		lb_Rpasivos.setText(String.valueOf(pasivos));
-		lb_Rcapital.setText(String.valueOf(capital));
-		lb_Rtotal.setText(String.valueOf(total));
+		lb_Ractivos.setText("$ "+String.valueOf(activos));
+		lb_Rpasivos.setText("$ "+String.valueOf(pasivos));
+		lb_Rcapital.setText("$ "+String.valueOf(capital));
+		lb_Rtotal.setText("$ "+String.valueOf(total));
 	}
 }

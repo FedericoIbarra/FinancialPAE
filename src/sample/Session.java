@@ -7,8 +7,10 @@ import sample.DataModels.EntryTable;
 import sample.DataModels.User;
 
 import java.io.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Session {
 	private static Session ourInstance = new Session();
@@ -25,24 +27,38 @@ public class Session {
 	private Session() {
 	}
 
+	public void createMocks() {
+
+		Random rand = new Random();
+		String reference;
+		int category;
+		int subcategory;
+		float amount;
+		LocalDate date = LocalDate.of(2017, 1,1);
+
+		for (int i = 0; i < 1200; i++) {
+			date = date.plusDays(1);
+			pushEntry(new Entry("Mock " + i, rand.nextInt(3), rand.nextInt(3), rand.nextInt(5000), date));
+		}
+
+
+	}
+
 	/**
 	 * Configures session with a given username.
-	 *
-	 * @param user
-	 *            username.
+	 * @param user username.
 	 */
 
 	public void setUser(String user) {
 		this.user = user;
 		filename = user.concat(".data");
 
+		//createMocks();
 	}
 
 	/**
 	 * Push new entry into file.
-	 *
-	 * @param entry
-	 *            new Entry.
+	 * @param entry new Entry.
 	 */
 
 	public void pushEntry(Entry entry) {
@@ -86,8 +102,7 @@ public class Session {
 	/**
 	 * Get data from filesystem.
 	 *
-	 * @param asTable
-	 *            true if the data is for Table, false if it's raw data.
+	 * @param asTable true if the data is for Table, false if it's raw data.
 	 * @return List of entries.
 	 */
 
@@ -229,9 +244,7 @@ public class Session {
 
 	/**
 	 * Adds new users to file.
-	 *
-	 * @param newUser
-	 *            new user.
+	 * @param newUser new user.
 	 * @return false if an error occurs.
 	 */
 	public boolean pushUser(User newUser) {
@@ -272,9 +285,7 @@ public class Session {
 	}
 
 	/**
-	 * Delete an specific user
-	 *
-	 * @param userName
+	 * Delete a specific user
 	 */
 	public void removeUses() {
 		List<User> usersList = new ArrayList<User>();
@@ -338,17 +349,5 @@ public class Session {
 			e.printStackTrace();
 		}
 	}
-
-	// public static void main(String[] args) {
-	// Session s = new Session();
-	//
-	// System.out.println("Ususarios antiguos");
-	// s.loadUsers().forEach(p->System.out.println(p.getUsername()));
-	// s.removeUser("sas");
-	//
-	// //Borramos uno
-	// System.out.println("Ususarios actualizados");
-	// s.loadUsers().forEach(p->System.out.println(p.getUsername()));
-	// }
 
 }

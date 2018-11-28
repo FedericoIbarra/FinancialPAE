@@ -2,11 +2,11 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.geometry.Insets?>
+
 <AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controllers.MainScreenController" fx:id="gp">
 
     <children>
@@ -17,17 +17,17 @@
             <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" alignment="TOP_CENTER" spacing="15">
                 <ImageView layoutX="20.0" layoutY="20.0" fitHeight="100.0" fitWidth="100.0" preserveRatio="true">
                     <image>
-                        <Image url="https://specials-images.forbesimg.com/imageserve/5b8eb1b3a7ea434b99d54b36/960x0.jpg?fit=scale"/>
+                        <Image url="/sample/Media/Logo.png"/>
                     </image>
                 </ImageView>
-                <Label text="Jeff Bezos" fx:id="lb_name" styleClass="titles" />
+                <Label fx:id="lb_name" styleClass="titles" />
                 <padding>
-                    <Insets top="45.0" />
+                    <Insets top="45.0"/>
                 </padding>
             </VBox>
 
             <AnchorPane>
-                <VBox alignment="CENTER" spacing="15" minWidth="200" maxWidth="200" AnchorPane.bottomAnchor="50">
+                <VBox alignment="CENTER" spacing="15 " minWidth="200" maxWidth="200" AnchorPane.bottomAnchor="50">
                     <Button fx:id="bt_logOut"  styleClass="buttonIn" onAction="#logOut"/>
                     <Button fx:id="bt_Remove" styleClass="buttonRemove" onAction="#removeUser"/>
                 </VBox>

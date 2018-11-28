@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -30,6 +31,7 @@ public class TableController {
     @FXML TableColumn col_sub;
     @FXML TableColumn col_amount;
     @FXML TableColumn col_date;
+    @FXML Button bt_exit;
 
     /**
      * Load data and language before display interface.
@@ -56,6 +58,7 @@ public class TableController {
         col_sub.setText(currentRB.getString("subcategory"));
         col_amount.setText(currentRB.getString("amount"));
         col_date.setText(currentRB.getString("date"));
+        bt_exit.setText(currentRB.getString("SalirEstadoResultado"));
 
 
     }

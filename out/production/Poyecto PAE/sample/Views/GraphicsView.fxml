@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+
+
+<AnchorPane fx:id="gp" fx:controller="sample.Controllers.GraphicsController"
+	xmlns:fx="http://javafx.com/fxml">
+	<children>
+		<VBox AnchorPane.topAnchor="10" spacing="20" minWidth="800"
+			alignment="CENTER">
+			<Label fx:id="title" alignment="CENTER" prefHeight="39.0"
+				prefWidth="484.0" styleClass="titles2">
+				<font>
+					<Font size="24.0" />
+				</font>
+			</Label>
+
+			<TextField fx:id="tf_year" maxWidth="70" alignment="CENTER"/>
+
+			<LineChart fx:id="lineC" title="">
+				<xAxis>
+					<CategoryAxis side="BOTTOM" label="Month">
+					</CategoryAxis>
+				</xAxis>
+				<yAxis>
+					<NumberAxis side="LEFT" label="Amount">
+					</NumberAxis>
+				</yAxis>
+			</LineChart>
+
+			<HBox alignment="CENTER" spacing="15">
+				<Button fx:id="generate" layoutX="492.0" styleClass="buttonIn"
+					onAction="#generar" />
+				<Button fx:id="exit" prefHeight="25.0" prefWidth="79.0"
+					styleClass="buttonUp" onAction="#exit" />
+			</HBox>
+
+		</VBox>
+	</children>
+</AnchorPane>

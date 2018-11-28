@@ -52,7 +52,7 @@
             </columns>
         </TableView>
 
-        <Button text="Salir" styleClass="buttonUp" onAction="#goBack"/>
+        <Button fx:id="bt_exit" styleClass="buttonUp" onAction="#goBack"/>
 
     </VBox>
 

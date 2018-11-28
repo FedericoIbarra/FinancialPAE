@@ -2,42 +2,16 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.shape.Rectangle?>
+
+
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="sample.Controllers.EntryController"
             prefHeight="400.0" prefWidth="600.0" fx:id="gp">
 
-    <children>
 
-
-        <StackPane AnchorPane.leftAnchor="0">
-            <Rectangle width="200" height="600" fill="#BFC4A4"/>
-            <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" alignment="TOP_CENTER" spacing="15">
-                <ImageView layoutX="20.0" layoutY="20.0" fitHeight="100.0" fitWidth="100.0" preserveRatio="true">
-                    <image>
-                        <Image url="https://specials-images.forbesimg.com/imageserve/5b8eb1b3a7ea434b99d54b36/960x0.jpg?fit=scale"/>
-                    </image>
-                </ImageView>
-
-                <Label fx:id="lb_name" styleClass="titles" />
-
-                <padding>
-                    <Insets top="45.0" />
-                </padding>
-
-            </VBox>
-
-            <AnchorPane>
-                <Button text="Log Out" styleClass="buttonIn" AnchorPane.bottomAnchor="50" AnchorPane.leftAnchor="75" onAction="#logOut"/>
-            </AnchorPane>
-        </StackPane>
-
-        <VBox AnchorPane.leftAnchor="190" alignment="CENTER" spacing="10" minWidth="600">
+        <VBox alignment="CENTER" spacing="10" minWidth="800">
 
             <padding>
                 <Insets topRightBottomLeft="15.0"/>
@@ -74,6 +48,5 @@
             </children>
         </VBox>
 
-    </children>
 
 </AnchorPane>

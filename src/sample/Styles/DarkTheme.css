@@ -142,3 +142,20 @@
     -fx-background-color: #664C77;
 }
 
+
+.text-field2 {
+    -fx-text-fill: #BFC4A4;
+    -fx-background-color: #2A2B24;
+    -fx-background-radius: 0.0;
+    -fx-border-width: 1.0;
+    -fx-border-color: #2A2B24 #2A2B24 #664C77 #2A2B24;
+}
+
+.text-field3 {
+    -fx-text-fill: #BFC4A4;
+    -fx-font-size: 18.0pt;
+    -fx-background-color: #2A2B24;
+    -fx-background-radius: 0.0;
+    -fx-border-width: 1.0;
+    -fx-border-color: #2A2B24 #2A2B24 #664C77 #2A2B24;
+}

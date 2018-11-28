@@ -29,7 +29,7 @@
             <ImageView layoutX="20.0" layoutY="20.0" fitHeight="100.0" fitWidth="100.0"
                        pickOnBounds="true" preserveRatio="true">
                 <image>
-                    <Image url="https://specials-images.forbesimg.com/imageserve/5b8eb1b3a7ea434b99d54b36/960x0.jpg?fit=scale"/>
+                    <Image url="/sample/Media/Logo.png"/>
                 </image>
             </ImageView>
             <padding>

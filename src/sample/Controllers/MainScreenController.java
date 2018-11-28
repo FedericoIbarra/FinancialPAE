@@ -122,7 +122,11 @@ public class MainScreenController {
      * Method for ShowGraphics button.
      * @param actionEvent action of button.
      */
-    public void graphics(ActionEvent actionEvent) {
+    public void graphics(ActionEvent actionEvent) throws IOException {
+
+        AnchorPane gp2 = FXMLLoader.load (getClass().getResource("../Views/GraphicsView.fxml"));
+        gp.getChildren().setAll(gp2);
+
         System.out.println("Si jala graphics");
     }
 

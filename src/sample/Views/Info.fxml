@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -22,10 +19,11 @@
                 <Insets top="30.0"/>
             </padding>
         </Label>
-        <Label text="Javier Ochoa" styleClass="label"/>
-        <Label text="Federico Ibarra" styleClass="label"/>
-        <Label text="Bernardo Elizodno" styleClass="label"/>
+        <Label text="Bernardo Elizondo" styleClass="label"/>
         <Label text="Diego Ascencio" styleClass="label"/>
+        <Label text="Federico Ibarra" styleClass="label"/>
+        <Label text="Javier Ochoa" styleClass="label"/>
+
 
     </VBox>
 
